@@ -1,5 +1,6 @@
 const navBar = document.querySelector('.nav-bar')
 const menu = document.querySelectorAll('.menu')
+const content = document.querySelectorAll('.content')
 
 
 window.onscroll = (e)=>{
@@ -26,3 +27,18 @@ menu.forEach((menu)=>{
         e.target.firstElementChild.style.transform='scale(0)'
     }
  })
+
+ const observer = new IntersectionObserver((entries)=>{
+     entries.forEach((entry)=>{
+        if (entry.isIntersecting==true) {
+            entry.target.classList.add('inview')
+          }
+        else{
+            entry.target.classList.remove('inview')
+        }
+     })
+ })
+ content.forEach((content)=>{
+    observer.observe(content)
+ })
+ 
