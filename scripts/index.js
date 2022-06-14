@@ -1,3 +1,5 @@
+
+
 const navBar = document.querySelector('.nav-bar')
 const menu = document.querySelectorAll('.menu')
 const content = document.querySelectorAll('.content')
@@ -28,6 +30,7 @@ menu.forEach((menu)=>{
     }
  })
 
+ 
 //  const observer = new IntersectionObserver((entries)=>{
 //      entries.forEach((entry)=>{
 //         if (entry.isIntersecting==true) {
