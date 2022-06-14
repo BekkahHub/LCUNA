@@ -28,17 +28,17 @@ menu.forEach((menu)=>{
     }
  })
 
- const observer = new IntersectionObserver((entries)=>{
-     entries.forEach((entry)=>{
-        if (entry.isIntersecting==true) {
-            entry.target.classList.add('inview')
-          }
-        else{
-            entry.target.classList.remove('inview')
-        }
-     })
- })
- content.forEach((content)=>{
-    observer.observe(content)
- })
+//  const observer = new IntersectionObserver((entries)=>{
+//      entries.forEach((entry)=>{
+//         if (entry.isIntersecting==true) {
+//             entry.target.classList.add('inview')
+//           }
+//         else{
+//             entry.target.classList.remove('inview')
+//         }
+//      })
+//  })
+//  content.forEach((content)=>{
+//     observer.observe(content)
+//  })
  

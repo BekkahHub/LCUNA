@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Jost:ital,wght@0,300;0,700;1,200&display=swap');
 
-
-
 /* general styles */
 body{
     font-family: 'Jost', sans-serif;
-    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -19,10 +16,11 @@ a{
     align-items: center;
     position: fixed;
     width: 100%;
-    height: 5em;
+    height: 100px;
     left: 0px;
     top: 0px;
     color: white;
+    background: transparent;
     padding-top: 10px;
     transition: 0.5s;
     z-index: 5;
@@ -33,18 +31,18 @@ a{
     color: black;
 }
 .logo{
-    width: 10%;
-    height: 4rem;
+    width: 80px;
+    height: 80px;
     background: url(../images/LOGO.png);
-    background-repeat: no-repeat;
 }
 .menu-holder{
     display: flex;
     justify-content: space-around;
+    word-spacing: 20px;
 }
 .menu{
-    font-size: 0.8em;
-    margin: 3em;
+    font-size: 16px;
+    margin: 60px;
     color: white;
     
 }
@@ -54,15 +52,16 @@ a{
 }
 .contact-button{
     width: 200px;
-    height: 3rem;
+    height: 60px;
     background: #0000FE;
     border-radius: 30px;
     border: none;
     color: white;
 }
 .hero-section{
-    min-height: 100vh;
-    width: 100%;
+    height: 90vh;
+    width: 101%;
+    margin-left: -0.55%;
     background: url(../images/BG.png);
     background-position: center;
     background-size: contain;
@@ -87,8 +86,6 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    max-width: 40%;
-    padding-top: 2em;
 }
 .hero-text h4{
     color: #0000FE;
@@ -98,17 +95,17 @@ a{
     
 }
 .hero-section h1{
-    max-width: 550px;
-    max-height: 112px;
+    width: 550px;
+    height: 112px;
     font-family: 'Jost';
     font-style: normal;
     font-weight: 700;
-    font-size: 170%;
+    font-size: 42px;
     line-height: 56px;
     color: #FFFFFF;
 }
 .hero-section h3{
-    width: 100%;
+    width: 584px;
     height: 107px;
     font-style: normal;
     font-weight: 450;
@@ -122,27 +119,23 @@ a{
     justify-content: center;
     align-items: center;
     padding: 14px 20px;
-    width: 50%;
+    gap: 16px;
+    width: 216px;
     height: 46px;
     background: #0000FE;
-    margin-top: 10vh;
+    margin-top: 10px;
     color: white;
     font-size: 14px;
     border-radius: 8px;
-    border: none;
 }
 .hero-image{
-    width:40%;
-    height: 60vh;
+    width: 580px;
+    height: 500px;
     background: url(../images/header-image.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
     border-radius: 20px;
     margin-top: 80px;
 }
-
-/* adds animation when element is in view */
-/* .inview{
+.inview{
     animation: inview 1s forwards ease-in-out;
   }
   
@@ -154,7 +147,7 @@ a{
       opacity: 1;
       transform: translateY(0);
     }
-  } */
+  }
 .about-lcuna{
     display: flex;
     background: #F5F5F5;
@@ -163,7 +156,7 @@ a{
     align-items: center;
 }
 .lcuna-description{
-    max-width: 60%;
+    width: 750px;
     font-style: normal;
     font-weight: 450;
     font-size: 16px;
@@ -175,11 +168,11 @@ a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 5em;
+    margin: 150px;
 }
 .section{
     height: auto;
-    width: 30%;
+    width: 330px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -218,48 +211,32 @@ a{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
 }
 .info-img{
-    width: 40vw;
-    margin-left: 0;
-    margin: 3em;
-    height: auto;
-    position: relative;
+    height: 500px;
 }
 .info-frame{
-    width: 100%;
-    height: 24em;
+    width: 478.47px;
+    height: 478.47px;
     border: 5px solid #0000FE;
-    border-radius: 1em;
+    border-radius: 15px;
     position: absolute;
     z-index: -2;
     margin: 20px;
 }
-@media screen and (min-width:1200px) {
-    .info-img{
-        width: 24em;
-    }
-    .info-frame{
-        width: 24em;
-    }
-}
 .info-image{
-    width: 100%;
-    height: 24em;
+    width: 478.47px;
+    height: 478.47px;
     background: #C4C4C4;
     border-radius: 10px;
 
 }
 .info-desc{
-    max-width:30vw;
-    padding: 2em;
-    text-align: left;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
+    width: 600px;
 }
 .info-title{
+    width: 557px;
+    height: 60px;
     font-family: 'jost';
     font-style: normal;
     font-weight: 500;
@@ -267,9 +244,6 @@ a{
     line-height: 60px;
     letter-spacing: -0.305053px;
     color: #000000;
-}
-.info-body{
-    max-width: 25em;
 }
 .info-button{
     margin-top: 30px;
@@ -290,7 +264,8 @@ footer{
     flex-direction: column;
     align-items: center;
     height: 50vh;
-    width: 100%;
+    width: 101%;
+    margin-left: -0.55%;
     margin-bottom: -10px;
     background: #000000;
 }
