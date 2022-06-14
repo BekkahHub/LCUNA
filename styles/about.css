@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Jost:ital,wght@0,300;0,700;1,200&display=swap");
+@import url("http://fonts.cdnfonts.com/css/circular-std");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+a:active,
+a:hover,
+a:focus,
+a:visited {
+  color: inherit;
+}
+button {
+  border: none;
+  background: none;
+}
+input:focus {
+  outline: none;
+}
+/* Header */
+header {
+  width: 100%;
+  background: #ffff;
+  padding: 1.25rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+header a {
+  color: black;
+  font-family: "Circular Std", sans-serif;
+  font-size: 1rem;
+}
+.container,
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+nav {
+  width: 40%;
+}
+nav ul li {
+  list-style: none;
+}
+header button {
+  padding: 1.25rem 3rem;
+  border-radius: 1.875rem;
+  background: #0000fe;
+  color: white;
+  font-family: "Circular Std", sans-serif;
+  cursor: pointer;
+}
+
+/* section one */
+.section-one {
+  border-bottom: 1px solid #000000;
+  padding: 15rem 0 10rem 0;
+  position: relative;
+}
+.section-one h1 {
+  font-size: 3.5rem;
+  font-family: "Circular Std", sans-serif;
+  text-align: center;
+  width: 55%;
+  margin: 0 auto;
+}
+.section-one div {
+  position: absolute;
+  background: #fff;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  width: 6.25rem;
+  height: 6.25rem;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* section two */
+.section-two {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+.section-two div {
+  padding: 6rem 3rem 10rem 3rem;
+  background: #f8f8f8;
+  border-radius: 8px;
+  margin: 0 1.5rem 1.5rem 1.5rem;
+  width: 25rem;
+}
+
+/* section three */
+.section-three {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Circular Std", sans-serif;
+  padding: 4rem 0 15rem 0;
+}
+.section-three h2 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+.core-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
+.core-info div {
+  width: 30%;
+}
+.core-info div h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.core-info div p {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+/* About Footer */
+footer {
+  background: #000000;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Circular Std", sans-serif;
+  padding: 6.25rem 0;
+}
+.footer div{
+    margin: 1rem;
+}
+.column p {
+  color: #ffffff;
+}
+.footer {
+  width: 90%;
+  margin: 0 auto;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer a {
+  color: #f5f5f5;
+}
+.footer {
+  font-size: 1rem;
+  line-height: 35px;
+}
+.footer h4 {
+  color: #555555;
+}
+.copyright {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 6.25rem;
+}
+.socials a {
+  margin-left: 3.5rem;
+}
