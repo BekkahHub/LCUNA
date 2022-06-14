@@ -1,5 +1,4 @@
 
-
 const navBar = document.querySelector('.nav-bar')
 const menu = document.querySelectorAll('.menu')
 const content = document.querySelectorAll('.content')
