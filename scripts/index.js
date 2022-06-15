@@ -25,4 +25,12 @@ menu.forEach((menu)=>{
         e.preventDefault()
         e.target.firstElementChild.style.transform='scale(0)'
     }
- })
+ });
+
+
+
+
+ $(function() {
+    AOS.init();
+    window.addEventListener('load', AOS.refresh);
+  });

@@ -6,6 +6,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
 a {
   text-decoration: none;
 }
@@ -57,9 +61,16 @@ header button {
   padding: 1.25rem 3rem;
   border-radius: 1.875rem;
   background: #0000fe;
+  border: 2px solid #0000fe;
   color: white;
   font-family: "Circular Std", sans-serif;
   cursor: pointer;
+  transition: transform 0.43s ease-out;
+}
+header button:hover {
+  background: #ffffff;
+  color: #0000fe;
+  transform: translateY(-10px);
 }
 
 /* section one */
@@ -150,8 +161,8 @@ footer {
   font-family: "Circular Std", sans-serif;
   padding: 6.25rem 0;
 }
-.footer div{
-    margin: 1rem;
+.footer div {
+  margin: 1rem;
 }
 .column p {
   color: #ffffff;

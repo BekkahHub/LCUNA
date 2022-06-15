@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
@@ -28,30 +33,37 @@
     </header>
     <main>
       <section class="section-one">
-        <h1>
+        <h1
+          data-aos="fade-left"
+          class="animate__animated animate__zoomIn animate__slow 0.1s"
+        >
           Young in our spirits and modern look. Bold in execution and smooth
           delivery.
         </h1>
         <div>
-          <img src="../images/down-arrow.svg" alt="" />
+          <img
+            src="../images/down-arrow.svg"
+            alt=""
+            class="animate__animated animate__slideInDown animate__slow 0.1s"
+          />
         </div>
       </section>
       <section class="section-two">
-        <div>
+        <div data-aos="fade-down-right">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod.
           </p>
         </div>
-        <div>
+        <div data-aos="flip-up" data-aos-duration="1000">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod.
           </p>
         </div>
-        <div>
+        <div data-aos="fade-down-left">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -103,13 +115,35 @@
           </p>
         </div>
         <div class="socials">
-          <a href=""><img src="../images/Instagram.svg" alt="instagram" /></a>
-          <a href=""><img src="../images/Facebook.svg" alt="facebook" /></a>
-          <a href=""><img src="../images/Twitter.svg" alt="twitter" /></a>
-          <a href=""><img src="../images/LinkedIn.svg" alt="linkedIn" /></a>
+          <a href=""
+            ><img
+              src="../images/Instagram.svg"
+              alt="instagram"
+              data-aos="fade-right"
+          /></a>
+          <a href=""
+            ><img
+              src="../images/Facebook.svg"
+              alt="facebook"
+              data-aos="fade-down"
+          /></a>
+          <a href=""
+            ><img src="../images/Twitter.svg" alt="twitter" data-aos="fade-up"
+          /></a>
+          <a href=""
+            ><img
+              src="../images/LinkedIn.svg"
+              alt="linkedIn"
+              data-aos="fade-left"
+          /></a>
         </div>
       </div>
       <p class="copyright">&#169; LCUNA</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
