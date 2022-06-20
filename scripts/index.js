@@ -36,7 +36,7 @@ menu.forEach((menu)=>{
     AOS.init();
     window.addEventListener('load', AOS.refresh);
   });
- })
+ 
 
  
 //  const observer = new IntersectionObserver((entries)=>{
