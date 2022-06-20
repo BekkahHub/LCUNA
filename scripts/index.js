@@ -1,5 +1,7 @@
+
 const navBar = document.querySelector('.nav-bar')
 const menu = document.querySelectorAll('.menu')
+const content = document.querySelectorAll('.content')
 
 
 window.onscroll = (e)=>{
@@ -34,3 +36,20 @@ menu.forEach((menu)=>{
     AOS.init();
     window.addEventListener('load', AOS.refresh);
   });
+ })
+
+ 
+//  const observer = new IntersectionObserver((entries)=>{
+//      entries.forEach((entry)=>{
+//         if (entry.isIntersecting==true) {
+//             entry.target.classList.add('inview')
+//           }
+//         else{
+//             entry.target.classList.remove('inview')
+//         }
+//      })
+//  })
+//  content.forEach((content)=>{
+//     observer.observe(content)
+//  })
+ 

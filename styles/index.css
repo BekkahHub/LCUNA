@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Jost:ital,wght@0,300;0,700;1,200&display=swap');
 
+
+
 /* general styles */
 body{
     font-family: 'Jost', sans-serif;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -16,13 +19,13 @@ a{
     align-items: center;
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 5em;
     left: 0px;
     top: 0px;
     color: white;
-    background: transparent;
     padding-top: 10px;
     transition: 0.5s;
+    z-index: 5;
 }
 /* activates when the page is scrolled past 100px */
 .scrolled{
@@ -30,18 +33,18 @@ a{
     color: black;
 }
 .logo{
-    width: 80px;
-    height: 80px;
+    width: 10%;
+    height: 4rem;
     background: url(../images/LOGO.png);
+    background-repeat: no-repeat;
 }
 .menu-holder{
     display: flex;
-    justify-content: space-evenly;
-    word-spacing: 20px;
+    justify-content: space-around;
 }
 .menu{
-    font-size: 16px;
-    margin: 60px;
+    font-size: 0.8em;
+    margin: 3em;
     color: white;
     
 }
@@ -51,16 +54,15 @@ a{
 }
 .contact-button{
     width: 200px;
-    height: 60px;
+    height: 3rem;
     background: #0000FE;
     border-radius: 30px;
     border: none;
     color: white;
 }
 .hero-section{
-    height: 90vh;
-    width: 101%;
-    margin-left: -0.55%;
+    min-height: 100vh;
+    width: 100%;
     background: url(../images/BG.png);
     background-position: center;
     background-size: contain;
@@ -85,6 +87,8 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    max-width: 40%;
+    padding-top: 2em;
 }
 .hero-text h4{
     color: #0000FE;
@@ -94,17 +98,17 @@ a{
     
 }
 .hero-section h1{
-    width: 550px;
-    height: 112px;
+    max-width: 550px;
+    max-height: 112px;
     font-family: 'Jost';
     font-style: normal;
     font-weight: 700;
-    font-size: 42px;
+    font-size: 170%;
     line-height: 56px;
     color: #FFFFFF;
 }
 .hero-section h3{
-    width: 584px;
+    width: 100%;
     height: 107px;
     font-style: normal;
     font-weight: 450;
@@ -118,22 +122,39 @@ a{
     justify-content: center;
     align-items: center;
     padding: 14px 20px;
-    gap: 16px;
-    width: 216px;
+    width: 50%;
     height: 46px;
     background: #0000FE;
-    margin-top: 10px;
+    margin-top: 10vh;
     color: white;
     font-size: 14px;
     border-radius: 8px;
+    border: none;
 }
 .hero-image{
-    width: 580px;
-    height: 500px;
+    width:40%;
+    height: 60vh;
     background: url(../images/header-image.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
     border-radius: 20px;
     margin-top: 80px;
 }
+
+/* adds animation when element is in view */
+/* .inview{
+    animation: inview 1s forwards ease-in-out;
+  }
+  
+  @keyframes inview {
+    from{
+      transform: translateY(180px);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  } */
 .about-lcuna{
     display: flex;
     background: #F5F5F5;
@@ -142,7 +163,7 @@ a{
     align-items: center;
 }
 .lcuna-description{
-    width: 750px;
+    max-width: 60%;
     font-style: normal;
     font-weight: 450;
     font-size: 16px;
@@ -154,11 +175,11 @@ a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 150px;
+    padding: 5em;
 }
 .section{
     height: auto;
-    width: 330px;
+    width: 30%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -189,6 +210,7 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content:center;
+    padding-bottom: 5em;
 }
 .infos{
     height: 100vh;
@@ -197,32 +219,48 @@ a{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 2em;
 }
 .info-img{
-    height: 500px;
+    width: 40vw;
+    margin-left: 0;
+    margin: 3em;
+    height: auto;
+    position: relative;
 }
 .info-frame{
-    width: 478.47px;
-    height: 478.47px;
+    width: 100%;
+    height: 24em;
     border: 5px solid #0000FE;
-    border-radius: 15px;
+    border-radius: 1em;
     position: absolute;
     z-index: -2;
     margin: 20px;
 }
+@media screen and (min-width:1200px) {
+    .info-img{
+        width: 24em;
+    }
+    .info-frame{
+        width: 24em;
+    }
+}
 .info-image{
-    width: 478.47px;
-    height: 478.47px;
+    width: 100%;
+    height: 24em;
     background: #C4C4C4;
     border-radius: 10px;
 
 }
 .info-desc{
-    width: 600px;
+    max-width:30vw;
+    padding: 2em;
+    text-align: left;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
 }
 .info-title{
-    width: 557px;
-    height: 60px;
     font-family: 'jost';
     font-style: normal;
     font-weight: 500;
@@ -230,6 +268,9 @@ a{
     line-height: 60px;
     letter-spacing: -0.305053px;
     color: #000000;
+}
+.info-body{
+    max-width: 25em;
 }
 .info-button{
     margin-top: 30px;
@@ -250,8 +291,7 @@ footer{
     flex-direction: column;
     align-items: center;
     height: 50vh;
-    width: 101%;
-    margin-left: -0.55%;
+    width: 100%;
     margin-bottom: -10px;
     background: #000000;
 }
