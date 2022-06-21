@@ -5,50 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LCUNA</title>
-    <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="../styles/index.css">
-    <link rel="shortcut icon" href="../images/LOGO.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="shortcut icon" href="./images/LOGO.svg" type="image/x-icon">
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://dcoder-x.github.io/htmlReusable/reusable.js"></script>
+    <script src="./scripts/footer.js"></script>
+    <script src="./scripts/navbar.js"></script>
 </head>
 <body>
-    <div class="nav-bar">
-        <div class="logo">
-            <a href="../pages/index.html">
-                <img src="../images/LOGO.svg" alt="logo" />
-            </a>
-        </div>
-        <div class="menu-holder">
-            <a href="/pages/about.html">
-                <div class="menu">
-                    About Us
-                    <hr>
-                </div>  
-            </a>
-            <a href="/">
-                <div class="menu">
-                    Media
-                    <hr>
-                </div>  
-            </a>
-            <a href="../pages/FAQ.html">
-                <div class="menu">
-                    FAQ
-                    <hr>
-                </div>  
-            </a>
-            <a href="../pages/history.html">
-                <div class="menu">
-                    History
-                    <hr>
-                </div>  
-            </a>
-        </div>
-        <a href="/pages/contact.html">
-            <button class="contact-button">
-                Contact us
-            </button>
-        </a>
-    </div>
+    <nav-bar></nav-bar>
     <div class="hero-section content">
         <div class="hero-svg">
 
@@ -116,9 +87,9 @@
             </div>
         </div>
     </div>
-    <section class="info-section">
-        <div class="infos content">
-            <div class="info-img">
+    <section class="info-section" >
+        <div class="infos content" data-aos="fade-right" >
+            <div class="info-img" data-aos="zoom-out" data-aos-duration="2000">
                 <div class="info-frame">
 
                 </div>
@@ -127,7 +98,7 @@
                 </div>
                 
             </div>
-            <div class="info-desc">
+            <div class="info-desc" data-aos="flip-left" data-aos-duration="2000">
                 <h2 class="info-title">
                     History of LCUNA
                 </h2>
@@ -136,13 +107,13 @@
                     Fuga, vero. Dolorem totam officiis ab, quisquam qui vero quia vitae in dicta 
                     temporibus nostrum ipsum corporis quo tempore mollitia architecto tenetur!
                 </div>
-                <button class="info-button">
+                <button class="info-button" data-aos="fade-up">
                     Learn More
                 </button>
             </div>
         </div>
         <div class="infos content">
-            <div class="info-img">
+            <div class="info-img" data-aos="zoom-out" data-aos-duration="2000">
                 <div class="info-frame">
 
                 </div>
@@ -151,7 +122,7 @@
                 </div>
                 
             </div>
-            <div class="info-desc">
+            <div class="info-desc" data-aos="flip-right" data-aos-duration="2000">
                 <h2 class="info-title">
                     Roles of LCUNA
                 </h2>
@@ -166,7 +137,7 @@
             </div>
         </div>
         <div class="infos content">
-            <div class="info-img">
+            <div class="info-img" data-aos="zoom-out" data-aos-duration="2000">
                 <div class="info-frame">
 
                 </div>
@@ -175,7 +146,7 @@
                 </div>
                 
             </div>
-            <div class="info-desc">
+            <div class="info-desc" data-aos="flip-left" data-aos-duration="2000">
                 <h2 class="info-title">
                     Organogram
                 </h2>
@@ -190,59 +161,11 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
-        <div class="footer-text">
-            <div class="terms-and-condition">
-                <div class="footer-title">
-                   <h5>Terms and Condition</h5>
-                </div>
-                <div class="footer-body">
-                    <h5>
-                        Privacy
-                    </h5>
-                    <h5>
-                        Support
-                    </h5>
-                </div>
-            </div>
-            <div class="lcuna">
-                <div class="footer-title">
-                    <h5>Terms and Condition</h5>
-                </div>
-                <div class="footer-body">
-                    <h5>
-                        Privacy
-                    </h5>
-                    <h5>
-                        Support
-                    </h5>
-                </div>
-            </div>
-            <div class="contact-links">
-                <div class="footer-title">
-                    <h5>Terms and Condition</h5>
-                </div>
-                <div class="footer-body">
-                    <h5>
-                        Privacy
-                    </h5>
-                    <h5>
-                        Support
-                    </h5>
-                </div>
-            </div>
-            <div class="social-links">
-                <span class="iconify" data-icon="akar-icons:facebook-fill" style="color: #aaa;"></span>
-                <span class="iconify" data-icon="ant-design:instagram-filled" style="color: #aaa;"></span>
-                <span class="iconify" data-icon="ant-design:twitter-circle-filled" style="color: #aaa;"></span>
-                <span class="iconify" data-icon="akar-icons:linkedin-box-fill" style="color: #aaa;"></span>
-            </div>
-        </div>
-        <small style="color: white;">
-            &copy; LCUNA
-        </small>
-
-    </footer>
+    <footer-component></footer-component>
     <script src="../scripts/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

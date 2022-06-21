@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/LOGO.svg" alt="logo" />
+            </a>
+        </div>
+        <div class="menu-holder">
+            <a href="/pages/about.html">
+                <div class="menu">
+                    About Us
+                    <hr>
+                </div>  
+            </a>
+            <a href="/">
+                <div class="menu">
+                    Media
+                    <hr>
+                </div>  
+            </a>
+            <a href="../pages/FAQ.html">
+                <div class="menu">
+                    FAQ
+                    <hr>
+                </div>  
+            </a>
+            <a href="../pages/history.html">
+                <div class="menu">
+                    History
+                    <hr>
+                </div>  
+            </a>
+        </div>
+        <a href="/pages/contact.html">
+            <div class="contact-button">
+                <div class="contact-btn-bg">
+    
+                </div>
+                Contact us
+            </div>
+        </a>
+        </div>
+        <script>
+            const cBtn= document.querySelector('.contact-button')
+            const cBtnBg= document.querySelector('.contact-btn-bg')
+
+            cBtn.onmouseover=()=>{
+                cBtnBg.style.width='0px'
+                cBtn.style.color='#0000FE'
+                cBtn.style.border='#0000FE 1px solid'
+                
+                
+            }
+            cBtn.onmouseleave=()=>{
+                cBtnBg.style.width='200px'
+                cBtn.style.color='white'
+                
+            }
+
+        </script>
+</body>
+</html>

@@ -48,8 +48,21 @@ a{
 .contact-button{
     width: 200px;
     height: 3rem;
-    background: #0000FE;
+    background: transparent;
     border-radius: 30px;
-    border: none;
     color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease-in-out;
+}
+.contact-btn-bg{
+    width: 200px;
+    height: 3rem;
+    background-color: #0000FE;
+    border-radius: 30px;
+    position: absolute;
+    z-index: -1;
+    transition: 1s ease-in-out;
 }

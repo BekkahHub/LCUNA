@@ -6,53 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History</title>
     <link rel="stylesheet" href="../styles/history.css">
-    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/nav.css">
     <link rel="shortcut icon" href="../images/LOGO.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/normalize.css">
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://dcoder-x.github.io/htmlReusable/reusable.js"></script>
+    <script src="../scripts/footer.js"></script>
+    <script src="../scripts/navbar.js"></script>
     <style>
         .menu{
             color: black;
         }
+        .nav-bar{
+            color: black;
+            background-color:white 
+        }
     </style>
 </head>
 <body>
-    <div class="nav-bar" style="color: black;background-color:white ">
-        <div class="logo">
-
-        </div>
-        <div class="menu-holder">
-            <a href="about.html">
-                <div class="menu">
-                    About Us
-                    <hr>
-                </div>  
-            </a>
-            <a href="">
-                <div class="menu">
-                    Media
-                    <hr>
-                </div>  
-            </a>
-            <a href="FAQ.html">
-                <div class="menu">
-                    FAQ
-                    <hr>
-                </div>  
-            </a>
-            <a href="history.html">
-                <div class="menu">
-                    History
-                    <hr>
-                </div>  
-            </a>
-        </div>
-        <a href="contact.html">
-            <button class="contact-button">
-                Contact us
-            </button>
-        </a>
-    </div>
+    <nav-bar></nav-bar>
     <div class="page-header">
         <h3>
             Young in our spirits and modern look. Bold in execution and smooth delivery.
@@ -96,58 +73,10 @@
          quis nostrud exerc
         </div>
     </div>
-    <footer class="footer">
-        <div class="footer-text">
-            <div class="terms-and-condition">
-                <div class="footer-title">
-                   <h5>Terms and Condition</h5>
-                </div>
-                <div class="footer-body">
-                    <h5>
-                        Privacy
-                    </h5>
-                    <h5>
-                        Support
-                    </h5>
-                </div>
-            </div>
-            <div class="lcuna">
-                <div class="footer-title">
-                    <h5>Terms and Condition</h5>
-                </div>
-                <div class="footer-body">
-                    <h5>
-                        Privacy
-                    </h5>
-                    <h5>
-                        Support
-                    </h5>
-                </div>
-            </div>
-            <div class="contact-links">
-                <div class="footer-title">
-                    <h5>Terms and Condition</h5>
-                </div>
-                <div class="footer-body">
-                    <h5>
-                        Privacy
-                    </h5>
-                    <h5>
-                        Support
-                    </h5>
-                </div>
-            </div>
-            <div class="social-links">
-                <span class="iconify" data-icon="akar-icons:facebook-fill" style="color: #aaa;"></span>
-                <span class="iconify" data-icon="ant-design:instagram-filled" style="color: #aaa;"></span>
-                <span class="iconify" data-icon="ant-design:twitter-circle-filled" style="color: #aaa;"></span>
-                <span class="iconify" data-icon="akar-icons:linkedin-box-fill" style="color: #aaa;"></span>
-            </div>
-        </div>
-        <small style="color: white;">
-            &copy; LCUNA
-        </small>
-
-    </footer>
+    <footer-component></footer-component>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

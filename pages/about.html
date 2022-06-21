@@ -5,33 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/about.css" />
+    <link rel="stylesheet" href="../styles/nav.css">
     <link rel="shortcut icon" href="../images/LOGO.svg" type="image/x-icon">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://dcoder-x.github.io/htmlReusable/reusable.js"></script>
+    <script src="../scripts/footer.js"></script>
+    <script src="../scripts/navbar.js"></script>
     <title>LCUNA</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <a href="/index.html" class="logo">
-          <img src="../images/LOGO.svg" alt="logo" />
-        </a>
-        <nav>
-          <ul>
-            <li><a href="../pages/about.html">About Us</a></li>
-            <li><a href="../pages/media.html">Media</a></li>
-            <li><a href="../pages/FAQ.html">Faq</a></li>
-            <li><a href="../pages/history.html">History</a></li>
-          </ul>
-        </nav>
-        <a href="/pages/contact.html">
-          <button>Contact</button>
-        </a>
-      </div>
-    </header>
+    <nav-bar></nav-bar>
     <main>
       <section class="section-one">
         <h1
@@ -94,53 +81,7 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="footer">
-        <div class="column">
-          <h4>Terms and conditions</h4>
-          <p><a href="/bookNow">Privacy</a></p>
-          <p><a href="/bookNow">Support</a></p>
-        </div>
-        <div class="column">
-          <h4>LCUNA</h4>
-          <p>
-            Nimba County, Tappita <br />
-            City Liberia
-          </p>
-        </div>
-        <div class="column">
-          <h4>Info</h4>
-          <p>
-            hello@lcuna.com <br />
-            +000 000 0000
-          </p>
-        </div>
-        <div class="socials">
-          <a href=""
-            ><img
-              src="../images/Instagram.svg"
-              alt="instagram"
-              data-aos="fade-right"
-          /></a>
-          <a href=""
-            ><img
-              src="../images/Facebook.svg"
-              alt="facebook"
-              data-aos="fade-down"
-          /></a>
-          <a href=""
-            ><img src="../images/Twitter.svg" alt="twitter" data-aos="fade-up"
-          /></a>
-          <a href=""
-            ><img
-              src="../images/LinkedIn.svg"
-              alt="linkedIn"
-              data-aos="fade-left"
-          /></a>
-        </div>
-      </div>
-      <p class="copyright">&#169; LCUNA</p>
-    </footer>
+    <footer-component></footer-component>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
