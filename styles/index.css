@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Jost:ital,wght@0,300;0,700;1,200&display=swap');
 
 
-
 /* general styles */
+html{
+    width: 100vw;
+}
 body{
     font-family: 'Jost', sans-serif;
     overflow-x: hidden;
+    width: 100vw;
 }
 a{
     text-decoration: none;
@@ -13,41 +16,6 @@ a{
 }
 
 /* navbar styles */
-.nav-bar{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    height: 5em;
-    left: 0px;
-    top: 0px;
-    color: white;
-    padding-top: 10px;
-    transition: 0.5s;
-    z-index: 5;
-}
-.contact-button{
-    width: 200px;
-    height: 3rem;
-    background: transparent;
-    border-radius: 30px;
-    color: white;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 1s ease-in-out;
-}
-.contact-btn-bg{
-    width: 200px;
-    height: 3rem;
-    background-color: #0000FE;
-    border-radius: 30px;
-    position: absolute;
-    z-index: -1;
-    transition: 1s ease-in-out;
-}
 /* activates when the page is scrolled past 100px */
 .scrolled{
     background: white;
@@ -83,11 +51,11 @@ a{
 }
 .hero-section{
     min-height: 100vh;
-    width: 100%;
-    background: url(../images/BG.png);
+    width: 100vw;
+    /* background: url(../images/BG.png) ; */
     background-position: center;
     background-size: contain;
-    color: white;
+    color: black;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -111,13 +79,13 @@ a{
     max-width: 40%;
     padding-top: 2em;
 }
-.hero-text h4{
+/* .hero-text h4{
     color: #0000FE;
     margin-bottom: -20px;
     font-style: italic;
     font-weight: 700;
     
-}
+} */
 .hero-section h1{
     max-width: 550px;
     max-height: 112px;
@@ -126,7 +94,7 @@ a{
     font-weight: 700;
     font-size: 170%;
     line-height: 56px;
-    color: #FFFFFF;
+    color: black;
 }
 .hero-section h3{
     width: 100%;
@@ -135,7 +103,7 @@ a{
     font-weight: 450;
     font-size: 18px;
     line-height: 35px;
-    color: white;
+    color: black;
 }
 .hero-section button{
     display: flex;
@@ -145,17 +113,22 @@ a{
     padding: 14px 20px;
     width: 50%;
     height: 46px;
-    background: #0000FE;
+    background: transparent;
     margin-top: 10vh;
-    color: white;
+    color: #0000FE;
     font-size: 14px;
     border-radius: 8px;
-    border: none;
+    border: #0000FE 1px solid;
+    transition: 1s ease-in-out;
+}
+.hero-section button:hover{
+    background-color: #0000FE;
+    color: white;
 }
 .hero-image{
     width:40%;
     height: 60vh;
-    background: url(../images/header-image.png);
+    background: url(../images/header-image2.png);
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 20px;
@@ -305,4 +278,38 @@ a{
 
 .infos:nth-child(even){
     flex-direction: row-reverse;
+}
+
+@media screen and (min-height:1000px) {
+    .infos{
+        height: 50vh;
+    }
+}
+@media screen and (max-width:800px) {
+    .infos{
+        flex-direction: column;
+    }
+    .infos:nth-child(even){
+        flex-direction: column;
+    }
+    .info-img{
+        width: 70vw;
+        height: 70vw;
+    }
+    .info-image{
+        width: 70vw;
+        height: 70vw;
+    }
+    .info-frame{
+        width: 70vw;
+        height: 70vw;
+    }
+    .info-desc{
+        max-width:60vw;
+        padding: 2em;
+        text-align: center;
+    }
+    .nav-bar{
+        display: none;
+    }
 }

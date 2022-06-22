@@ -1,0 +1,113 @@
+.page-header{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3858FF;
+    color: #fff;
+    text-align: center; 
+}
+.page-header h5{
+    width: 50%;
+    font-weight: 100;
+    font-size: smaller;
+}
+.page-header h3{
+    width: 70%;
+    font-family: Circular Std;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: -5px; 
+   
+    
+}
+.page-divider{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3858FF;
+    z-index: -1;
+    display: none;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    z-index: 0;
+}
+.arrow-container{
+    border: black 1px solid;
+    background-color: #fff;
+    height: 100px ;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.faq{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5em;
+}
+.accordion{
+    width: 800px;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+.accordion:hover{
+    background-color: #829fae55;
+}
+.open{
+    height: 245px;
+}
+.accordion-header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000005;
+}
+.accordion-text{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+}
+.accordion-btn{
+    text-align: center;
+    height: 1.5em;
+    width: 1.5em;
+    border: 1.5px black solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accordion-body{
+    height: 165px;
+    padding: 2em;
+}
+@media screen and (max-width:800px) {
+    .accordion{
+        width:90vw;
+    }
+    
+}

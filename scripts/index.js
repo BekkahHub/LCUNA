@@ -4,20 +4,20 @@ const menu = document.querySelectorAll('.menu')
 const content = document.querySelectorAll('.content')
 
 
-window.onscroll = (e)=>{
-    const scrollTop =document.documentElement.scrollTop
-     if (scrollTop>100) {
-         navBar.classList.add('scrolled')
-         menu.forEach((menu)=>{
-            menu.style.color='black'
-         })
-     } else {
-        navBar.classList.remove('scrolled')
-        menu.forEach((menu)=>{
-            menu.style.color='white'
-         })
-     }
-}
+// window.onscroll = (e)=>{
+//     const scrollTop =document.documentElement.scrollTop
+//      if (scrollTop>100) {
+//          navBar.classList.add('scrolled')
+//          menu.forEach((menu)=>{
+//             menu.style.color='black'
+//          })
+//      } else {
+//         navBar.classList.remove('scrolled')
+//         menu.forEach((menu)=>{
+//             menu.style.color='white'
+//          })
+//      }
+// }
 menu.forEach((menu)=>{
     menu.onmouseover=(e)=>{
         e.preventDefault()
