@@ -53,14 +53,14 @@ a{
     min-height: 100vh;
     width: 100vw;
     /* background: url(../images/BG.png) ; */
-    background-position: center;
-    background-size: contain;
+    /* background-position: center;
+    background-size: contain; */
     color: black;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     top: 0px ;
-    margin-top: -10px;
+    margin-top: -2em;
 }
 .hero-svg{
     background: url(../images/hero-svg.svg);
@@ -285,9 +285,16 @@ a{
         height: 50vh;
     }
 }
+@media screen and (max-width:400px) {
+    .hero-section button{
+        margin-top: 10em;
+    }
+}
 @media screen and (max-width:800px) {
     .infos{
         flex-direction: column;
+        margin: 2em;
+        min-height: 70vh;
     }
     .infos:nth-child(even){
         flex-direction: column;
@@ -305,11 +312,57 @@ a{
         height: 70vw;
     }
     .info-desc{
-        max-width:60vw;
+        max-width:95vw;
         padding: 2em;
         text-align: center;
     }
-    .nav-bar{
+    .info-body{
+        font-size: 16px;
+    }
+    .info-title{
+        font-size: 20px;
+    }
+    nav-bar{
         display: none;
+    }
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+    .hero-text{
+        max-width: 100vw;
+        padding-bottom: 5em;
+    }
+    .hero-text h1{
+        width: 90vw;
+        font-size: medium;
+    }
+    .hero-text h3{
+        width: 90vw;
+        justify-content: center;
+    }
+    .hero-image{
+        width: 90vw;
+    }
+
+    .about-lcuna{
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding:2em;
+    }
+    .lcuna-description{
+        max-width: 90vw;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .sections{
+        flex-direction: column;
+        
+    }
+    .section{
+        margin: 1em;
+    }
+    .section-body,.section-title{
+        width: 80vw;
     }
 }

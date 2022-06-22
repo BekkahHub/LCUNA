@@ -1,45 +1,19 @@
 const navbar= `    
-<div class="nav-bar">
-        <div class="logo">
-            <a href="../index.html">
-                <img src="../images/LOGO.svg" alt="logo" />
-            </a>
-        </div>
-        <div class="menu-holder">
-            <a href="/pages/about.html">
-                <div class="menu">
-                    About Us
-                    <hr>
-                </div>  
-            </a>
-            <a href="/">
-                <div class="menu">
-                    Media
-                    <hr>
-                </div>  
-            </a>
-            <a href="../pages/FAQ.html">
-                <div class="menu">
-                    FAQ
-                    <hr>
-                </div>  
-            </a>
-            <a href="../pages/history.html">
-                <div class="menu">
-                    History
-                    <hr>
-                </div>  
-            </a>
-        </div>
-        <a href="/pages/contact.html">
-            <div class="contact-button">
-                <div class="contact-btn-bg">
-    
-                </div>
-                Contact us
-            </div>
-        </a>
-        </div>
+<link rel="stylesheet" href="../styles/nav.css">
+<header>
+<a class="logo" href="/index.html">
+    <img src="../images/LOGO.png" alt="logo">
+</a>
+<nav>
+    <ul>
+        <li><a href="../pages/about.html">About Us</a></li>
+        <li><a href="../pages/media.html">Media</a></li>
+        <li><a href="../pages/FAQ.html">FAQ</a></li>
+        <li><a href="../pages/history.html">History</a></li>
+        <li><a href="../pages/contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+</header>
 
 `
 

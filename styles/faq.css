@@ -19,7 +19,7 @@
     font-family: Circular Std;
     font-size: 50px;
     font-weight: 400;
-    margin-bottom: -5px; 
+    margin-bottom: 0.7em; 
    
     
 }
@@ -51,13 +51,13 @@
     justify-content: center;
 }
 .faq{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 5em;
+    padding: 5em;
 }
 .accordion{
     width: 800px;
@@ -78,7 +78,7 @@
     height: 245px;
 }
 .accordion-header{
-    height: 80px;
+    min-height:80px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -102,7 +102,6 @@
     align-items: center;
 }
 .accordion-body{
-    height: 165px;
     padding: 2em;
 }
 @media screen and (max-width:800px) {
