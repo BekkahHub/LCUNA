@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Jost:ital,wght@0,300;0,700;1,200&display=swap");
 @import url("http://fonts.cdnfonts.com/css/circular-std");
-body{
+*{
   font-family: Circular std;
 }
 .page-header{
@@ -35,7 +35,7 @@ body{
   align-items: center;
 }
 .contact-banner{
-  height: 30rem;
+  height: 40rem;
   width: 100%;
   display: flex;
   flex-direction: column;
