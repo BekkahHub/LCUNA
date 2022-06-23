@@ -19,87 +19,29 @@ a:focus,
 a:visited {
   color: inherit;
 }
-button {
-  border: none;
-  background: none;
-}
-input:focus {
-  outline: none;
-}
-/* Header */
-header {
+/* page header */
+.page-header{
+  height: 50vh;
   width: 100%;
-  background: #ffff;
-  padding: 1.25rem 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-header a {
-  color: black;
-  font-family: "Circular Std", sans-serif;
-  font-size: 1rem;
-}
-.container,
-nav ul {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-}
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
-nav {
-  width: 40%;
-}
-nav ul li {
-  list-style: none;
-}
-header button {
-  padding: 1.25rem 3rem;
-  border-radius: 1.875rem;
-  background: #0000fe;
-  border: 2px solid #0000fe;
-  color: white;
-  font-family: "Circular Std", sans-serif;
-  cursor: pointer;
-  transition: transform 0.43s ease-out;
-}
-header button:hover {
-  background: #ffffff;
-  color: #0000fe;
-  transform: translateY(-10px);
-}
-
-/* section one */
-.section-one {
-  border-bottom: 1px solid #000000;
-  padding: 15rem 0 10rem 0;
-  position: relative;
-}
-.section-one h1 {
-  font-size: 3.5rem;
-  font-family: "Circular Std", sans-serif;
+  justify-content: center;
+  background-color: #3858FF;
+  color: #fff;
   text-align: center;
-  width: 55%;
-  margin: 0 auto;
+  margin-top: 4em;
 }
-.section-one div {
-  position: absolute;
-  background: #fff;
-  bottom: -50px;
-  left: 0;
-  right: 0;
-  width: 6.25rem;
-  height: 6.25rem;
-  border: 1px solid #000000;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  margin-left: auto;
-  margin-right: auto;
+.page-header p{
+  width: 50%;
+  font-weight: 100;
+}
+.page-header h3{
+  width: 70%;
+  font-family: Circular Std;
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 0.7em;  
 }
 
 /* section two */
@@ -147,4 +89,45 @@ header button:hover {
 .core-info div p {
   font-size: 1rem;
   line-height: 2rem;
+}
+@media screen and (max-width:700px) {
+  .page-header p{
+      width: 90%;
+      font-weight: 100;
+      font-size: 15px;
+  }
+  .page-header h3{
+      width: 70%;
+      font-family: Circular Std;
+      font-size: 2em;
+      font-weight: 400;
+      margin-bottom: 0.7em;  
+  }
+  .section-two div {
+    width: 90vh;
+    max-height: 30rem;
+    padding: 2rem;
+    font-size: .7rem;
+
+  }
+  .core-info{
+    flex-direction: column;
+  }
+  .section-three h2 {
+    font-size: 2.5rem;
+  }
+  .core-info div {
+    width: 90vw;
+    text-align: center;
+    padding: 1rem;
+  }
+  .core-info div h3 {
+    font-size: 1rem;
+  }
+  .core-info div p {
+    font-size: .5rem;
+  }
+  .section-three{
+    padding: 2rem;
+  }
 }

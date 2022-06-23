@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Jost:ital,wght@0,300;0,700;1,200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Jost:ital,wght@0,300;0,700;1,200&display=swap");
+@import url("http://fonts.cdnfonts.com/css/circular-std");
 
 
 /* general styles */
@@ -20,12 +22,6 @@ a{
 .scrolled{
     background: white;
     color: black;
-}
-.logo{
-    width: 10%;
-    height: 4rem;
-    background: url(../images/LOGO.png);
-    background-repeat: no-repeat;
 }
 .menu-holder{
     display: flex;
@@ -60,7 +56,7 @@ a{
     justify-content: space-evenly;
     align-items: center;
     top: 0px ;
-    margin-top: -2em;
+    margin-top: 3em;
 }
 .hero-svg{
     background: url(../images/hero-svg.svg);
@@ -290,10 +286,10 @@ a{
         margin-top: 10em;
     }
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
     .infos{
         flex-direction: column;
-        margin: 2em;
+        margin: 3em;
         min-height: 70vh;
     }
     .infos:nth-child(even){
@@ -343,7 +339,12 @@ a{
     .hero-image{
         width: 90vw;
     }
-
+    .hero-section button{
+        margin-top: 10em;
+    }
+    .hero-svg{
+        width: 100%;
+    }
     .about-lcuna{
         flex-direction: column;
         justify-content: center;

@@ -16,58 +16,47 @@
     <script src="../scripts/footer.js"></script>
     <script src="../scripts/navbar.js"></script>
     <title>LCUNA</title>
-    <style>
-      .menu{
-          color: black;
-      }
-      .nav-bar{
-          color: black;
-          background-color:white 
-      }
-  </style>
   </head>
   <body>
-    <!-- <nav-bar></nav-bar> -->
+    <nav-bar></nav-bar>
     <main>
-      <section class="section-one">
-        <h1
-          data-aos="fade-left"
-          class="animate__animated animate__zoomIn animate__slow 2s"
-        >
-          Young in our spirits and modern look. Bold in execution and smooth
-          delivery.
-        </h1>
-        <div>
-          <img
-            src="../images/down-arrow.svg"
-            alt=""
-            class="animate__animated animate__slideInDown animate__slow 2s"
-          />
+      <div class="page-header">
+        <h3>
+            contact us
+        </h3>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Natus vitae cumque soluta dolores eos ut modi, quos iure 
+            esse nemo, odit atque aperiam! Placeat, 
+            illum voluptatum. Fuga, aspernatur. Adipisci, aperiam?
+        </p>
+       
+      </div>
+      <div class="contact">
+        <div class="contact-banner">
+          <h6>
+            wanna talk to us?
+          </h6>
+          <h3>
+            How can we help you?
+          </h3>
+          <img src="../images/line.png" alt="">
         </div>
-      </section>
-     <section>
-
-     </section>
-     <footer-component></footer-component>
-     <script>
-        const cBtn= document.querySelector('.contact-button')
-        const cBtnBg= document.querySelector('.contact-btn-bg')
-
-        cBtn.onmouseover=()=>{
-            cBtnBg.style.width='0px'
-            cBtn.style.color='#0000FE'
-            cBtn.style.border='#0000FE 1px solid'
-            
-            
-        }
-        cBtn.onmouseleave=()=>{
-            cBtnBg.style.width='200px'
-            cBtn.style.color='white'
-            
-        }
-
-      </script>
-
+        <div class="contact-form">
+          <form>
+            <label for="full-name">Full name</label>
+            <input type="text" name="full-name" id="full-name" placeholder="Full Name">
+            <label for="e-name">E-mail</label>
+            <input type="email" name="e-mail" id="e-mail" placeholder="e-mail address">
+            <label for="message">Message</label>
+            <input type="text" name="message" id="message" placeholder="Enter message...">
+            <input type="submit" value="send" id="send-btn">
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer-component></footer-component>
+    <script src="../scripts/menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

@@ -59,3 +59,18 @@ footer {
 footer .help {
   margin-top: 37px;
 }
+@media screen and (max-width:900px) {
+  footer{
+    align-items: center;
+  }
+  .column h4 {
+    font-size: 0.5rem;
+  }
+  .footer p {
+    font-size: .5rem;
+  }
+  .footer h4 {
+    font-size: 1rem;
+
+  }
+}
