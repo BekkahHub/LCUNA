@@ -54,7 +54,7 @@ footer {
 .socials {
   display: flex;
   justify-content: space-between;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 footer .help {
   margin-top: 37px;

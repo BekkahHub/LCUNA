@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Jost:ital,wght@0,300;0,700;1,200&display=swap");
+@import url("http://fonts.cdnfonts.com/css/circular-std");
+body{
+    font-family: monospace;
+}
+.page-header{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3858FF;
+    color: #fff;
+    text-align: center;
+    margin-top: 4em;
+}
+.page-header p{
+    width: 50%;
+    font-weight: 100;
+}
+.page-header h3{
+    width: 70%;
+    font-family: Circular Std;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 0.7em;  
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+.section1,.section2{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 0;
+}
+.top-news{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-news-img{
+    width: 30vw;
+}
+.top-news-text{
+    max-width: 60vw;
+    padding: 0 2rem;
+}
+.top-news-text p{
+    font-weight: 20;
+    padding: 1rem 0;
+}
+.poster-info{
+    display: flex;
+    align-items: center;
+}
+.poster-info img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: -1rem;
+}
+.poster-info .text{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.poster-name{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+}
+.date{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #606060;
+}
+.section2{
+    justify-content: space-evenly;
+}
+.p-news{
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.p-news-img{
+    width: 100%;
+}
+.tag{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 7px;
+    height: 33px;
+    max-width: max-content;
+    background: rgba(0, 0, 254, 0.1);
+    border-radius: 5px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17px;
+    color: #0000FE;
+    margin: 1rem 0;
+}
+.p-news .desc{
+    margin: 1rem 0;
+    font-weight: 20;
+}
+.p-news .poster-info{
+    margin: 2rem 0;
+}
+@media screen and (max-width:700px) {
+    .page-header p{
+        width: 90%;
+        font-weight: 100;
+        font-size: 15px;
+    }
+    .page-header h3{
+        width: 70%;
+        font-family: Circular Std;
+        font-size: 2em;
+        font-weight: 400;
+        margin-bottom: 0.7em;  
+    }
+    .section1,.section2{
+        flex-direction: column;
+    }
+    .top-news{
+        flex-direction: column;
+    }
+    .top-news-img{
+        width: 80vw;
+    }
+    .top-news-text{
+        max-width: 90vw;
+        padding: 0;
+    }
+    .top-news-text h1{
+        font-size: 1rem;
+    }
+    .top-news-text p{
+     font-size: .7rem;
+    }
+    .p-news{
+        max-width: 90vw;
+    }
+}
