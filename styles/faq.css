@@ -8,7 +8,6 @@
 }
 .page-header {
   padding: 10rem 0 10rem;
-  font-family: "Circular Std", sans-serif;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -23,12 +22,14 @@
   width: 50%;
   font-weight: 100;
   line-height: 30px;
+  font-family: "Circular Std", sans-serif;
 }
 .page-header h3 {
   width: 70%;
   font-size: 50px;
   font-weight: 700;
   margin-bottom: 0.4em;
+  font-family: "Circular Std", sans-serif;
 }
 /* Accordion section */
 .faq {
@@ -56,6 +57,9 @@
 }
 .accordion:hover {
   background-color: #0000fe;
+}
+.accordion-text p {
+  font-family: "Circular Std", sans-serif;
 }
 .accordion:hover .accordion-text p {
   color: #fff;
@@ -92,12 +96,16 @@
   border: 2px solid white;
   color: #fff;
 }
-.accordion:hover .accordion-body {
+.accordion:hover .accordion-body p {
   color: #fff;
 }
 .accordion-body {
-  text-align: justify;
   width: 90%;
+}
+.accordion-body p {
+  text-align: justify;
+  font-family: "Circular Std", sans-serif;
+  color: #000000;
 }
 @media screen and (max-width: 1024px) {
   .page-header p {
