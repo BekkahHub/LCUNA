@@ -54,6 +54,12 @@ main,
   color: #0000fe;
   cursor: pointer;
   font-family: "Circular Std";
+  transition: 0.5s ease-in-out;
+}
+.hero-info button:hover {
+  background: #0000fe;
+  color: #fff;
+  transform: translateY(-10px);
 }
 .hero-image {
   flex-basis: 40%;
