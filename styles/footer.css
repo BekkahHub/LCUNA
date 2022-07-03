@@ -33,6 +33,7 @@ footer {
 .footer a {
   color: #000000;
   text-decoration: none;
+  font-family: "DM Sans", sans-serif;
 }
 .footer p {
   line-height: 35px;
