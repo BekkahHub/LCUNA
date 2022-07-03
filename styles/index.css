@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Jost:ital,wght@0,300;0,700;1,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Jost:ital,wght@0,300;0,700;1,200&display=swap");
-@import url("http://fonts.cdnfonts.com/css/circular-std");
+@font-face {
+  font-family: "Circular Std";
+  src: url("../styles/Fonts/circular-std-medium-500.ttf");
+}
 
 /* general styles */
 
@@ -8,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Circular Std";
 }
 main,
 .hero-section,
@@ -30,17 +34,17 @@ main,
 .hero-info h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  font-family: "Circular Std", sans-serif;
+  font-family: "Circular Std";
 }
 .hero-info p {
   line-height: 2rem;
   margin-bottom: 1rem;
   color: rgba(0, 0, 0, 0.7);
-  font-family: "Circular Std", sans-serif;
+  font-family: "Circular Std";
 }
 .hero-info a {
   text-decoration: none;
-  font-family: "Circular Std", sans-serif;
+  font-family: "Circular Std";
 }
 .hero-info button {
   background: #fff;
@@ -49,7 +53,7 @@ main,
   border-radius: 5px;
   color: #0000fe;
   cursor: pointer;
-  font-family: "Circular Std", sans-serif;
+  font-family: "Circular Std";
 }
 .hero-image {
   flex-basis: 40%;
@@ -74,7 +78,7 @@ main,
   color: #181818;
 }
 .about-section h2, .about-section p {
-  font-family: "Circular Std", sans-serif;
+  font-family: "Circular Std";
 }
 
 /* Usage section  */
@@ -93,13 +97,13 @@ main,
 }
 .usage-info h3 {
   color: #0000fe;
-  font-family: "Circular Std", sans-serif;
+  font-family: "Circular Std";
   margin-bottom: 1rem;
 }
 .usage-info p {
   line-height: 1.7rem;
   color: rgba(0, 0, 0, 0.8);
-  font-family: "Circular Std", sans-serif;
+  font-family: "Circular Std";
 }
 
 /* Roles section  */
@@ -136,14 +140,14 @@ main,
   border-radius: 1.875rem;
   padding: 1rem 2rem;
   color: #fff;
-  font-family: "Circular Std", sans-serif;
+  font-family: "Circular Std";
 }
 .roles-info h3 {
   font-size: 1.875rem;
   line-height: 60px;
   letter-spacing: -0.305053px;
   color: #000000;
-  font-family: "Circular Std", sans-serif;
+  font-family: "Circular Std";
 }
 .roles-info p {
   font-size: 1.2rem;
@@ -152,7 +156,7 @@ main,
   color: rgba(0, 0, 0, 0.8);
   margin-bottom: 2rem;
   text-align: justify;
-  font-family: "Circular Std", sans-serif;
+  font-family: "Circular Std";
 }
 .outer-frame {
   width: 100%;
