@@ -1,116 +1,167 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Jost:ital,wght@0,300;0,700;1,200&display=swap");
 @import url("http://fonts.cdnfonts.com/css/circular-std");
-*{
-  font-family: Circular std;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.page-header{
-  height: 50vh;
+body {
+  font-family: "Circular Std", sans-serif;
+}
+.page-header {
+  padding: 10rem 0 10rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #3858FF;
+  background-color: #0000fe;
   color: #fff;
   text-align: center;
   margin-top: 4em;
 }
-.page-header p{
+.page-header p {
   width: 50%;
   font-weight: 100;
+  line-height: 30px;
 }
-.page-header h3{
+.page-header h3 {
   width: 70%;
-  font-family: Circular Std;
   font-size: 50px;
-  font-weight: 400;
-  margin-bottom: 0.7em;  
+  font-weight: 700;
+  margin-bottom: 0.4em;
 }
-.contact{
-  width: 100vw;
-  height: auto;
-  padding: 10rem;
+
+/* form section  */
+.contact {
+  width: 85%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.contact-banner{
-  height: 40rem;
-  width: 100%;
+.contact-banner {
+  min-height: 40rem;
+  position: relative;
+  width: 50%;
   display: flex;
+  margin: auto;
   flex-direction: column;
-  background: #3858FF;
-  justify-content: center;
-  text-align: left;
-  padding-left: 3rem;
-  align-items:left;
-  color: white;
-  overflow: hidden;
-}
-.contact-banner h6{
-  margin-bottom: .5rem;
-  font-weight: 100;
-  color: rgba(255, 255, 255, 0.7);
-}
-.contact-banner img{
-  margin-bottom: -25rem;
-  margin-left: -3rem;
-  width: 10rem;
-}
-.contact-form{
-  width: 100%;
-  display: flex;
+  background: #0000fe;
   justify-content: center;
   align-items: center;
 }
-form{
+.contact-banner h6 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.25rem;
+  text-align: justify;
+  width: 90%;
+}
+.contact-banner h2 {
+  font-weight: 700;
+  width: 90%;
+  font-size: 2.8rem;
+  line-height: 3.438rem;
+  text-align: justify;
+  color: white;
+}
+.contact-banner img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.contact-form {
+  width: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+}
+form {
   display: flex;
   flex-direction: column;
   width: 80%;
 }
-#full-name,#e-mail{
-  height: 3em;
-}
-input{
-  border: black 1px solid;
+input {
+  border: 2px solid rgba(0, 0, 0, 0.4);
   border-radius: 5px;
-  padding: 5px;
-  margin-top: 1rem;
+  padding: 1.5rem;
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
 }
-label{
-  margin-top: 1rem;
+#message {
+  padding: 1.5rem;
+  resize: none;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin-top: 0.7rem;
 }
-#message{
-  min-height: 5rem;
-  text-align: start;
+form button {
+  padding: 1.5rem;
+  background: #000;
+  border: none;
+  margin-top: 2rem;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.25rem;
 }
-#send-btn{
-  height: 2rem;
-  background-color: black;
-  color: white;
+input::placeholder,
+#message::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: "Circular Std", sans-serif;
 }
-@media screen and (max-width:900px) {
-  .page-header p{
-      width: 90%;
-      font-weight: 100;
-      font-size: 15px;
+.contact h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .page-header p {
+    width: 70%;
   }
-  .page-header h3{
-      width: 70%;
-      font-family: Circular Std;
-      font-size: 2em;
-      font-weight: 400;
-      margin-bottom: 0.7em;  
-  }
-  .contact{
-    padding: 10rem 1rem;
+  .page-header {
+    padding: 8rem 0 6rem;
   }
 }
-@media screen and (max-width:600px) {
-  .contact{
+@media screen and (max-width: 768px) {
+  .contact {
     flex-direction: column;
   }
-  .contact-banner{
-    height: 300px;
+  .contact-banner {
+    display: none;
+  }
+  .contact h3 {
+    display: block;
+  }
+  .contact-form {
+    width: 90%;
+    border: 5px solid #0000fe;
+    border-radius: 10px;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contact-form {
+    width: 100%;
+    margin: 0 auto;
+  }
+  form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .page-header h3 {
+    width: 90%;
+    font-size: 35px;
+  }
+  .page-header p {
+    width: 90%;
+  }
+  .contact h3 {
+    font-size: 1.6rem;
   }
 }

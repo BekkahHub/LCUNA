@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-    font-family: Circular std;
 }
 html {
   overflow-x: hidden;
@@ -14,74 +13,68 @@ html {
 a {
   text-decoration: none;
 }
-a:active,
-a:hover,
-a:focus,
-a:visited {
-  color: inherit;
+body {
+  font-family: "Circular Std", sans-serif;
 }
+
 /* page header */
-.page-header{
-  height: 50vh;
+.page-header {
+  padding: 10rem 0 10rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #3858FF;
+  background-color: #0000fe;
   color: #fff;
   text-align: center;
   margin-top: 4em;
 }
-.page-header p{
+.page-header p {
   width: 50%;
   font-weight: 100;
+  line-height: 30px;
 }
-.page-header h3{
+.page-header h3 {
   width: 70%;
-  font-family: Circular Std;
   font-size: 50px;
-  font-weight: 400;
-  margin-bottom: 0.7em;  
+  font-weight: 700;
+  margin-bottom: 0.4em;
 }
 
 /* section two */
 .section-two {
-  width: 90%;
+  width: 85%;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   padding: 6rem 0;
 }
-.section-two div {
-  padding: 6rem 3rem 10rem 3rem;
-  background: #f8f8f8;
-  border-radius: 8px;
-  margin: 0 1.5rem 1.5rem 1.5rem;
-  width: 25rem;
+.section-two h3 {
+  font-size: 2.1rem;
+  line-height: 3.438rem;
+  text-align: justify;
 }
 
 /* section three */
 .section-three {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
-  font-family: "Circular Std", sans-serif;
   padding: 4rem 0 15rem 0;
 }
 .section-three h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
 }
 .core-info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   margin-top: 5rem;
 }
 .core-info div {
-  width: 30%;
+  width: 38%;
 }
 .core-info div h3 {
   font-size: 1.5rem;
@@ -90,45 +83,65 @@ a:visited {
 .core-info div p {
   font-size: 1rem;
   line-height: 2rem;
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "DM Sans", sans-serif;
 }
-@media screen and (max-width:700px) {
-  .page-header p{
-      width: 90%;
-      font-weight: 100;
-      font-size: 15px;
+@media screen and (max-width: 1024px) {
+  .page-header p {
+    width: 70%;
   }
-  .page-header h3{
-      width: 70%;
-      font-family: Circular Std;
-      font-size: 2em;
-      font-weight: 400;
-      margin-bottom: 0.7em;  
+  .page-header {
+    padding: 8rem 0 6rem;
   }
-  .section-two div {
-    width: 90vh;
-    max-height: 30rem;
-    padding: 2rem;
-    font-size: .7rem;
-
-  }
-  .core-info{
-    flex-direction: column;
-  }
-  .section-three h2 {
-    font-size: 2.5rem;
+  .section-two h3 {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
   }
   .core-info div {
-    width: 90vw;
+    width: 45%;
+  }
+  .section-three {
+    padding: 4rem 0 8rem 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-two {
+    width: 90%;
+    padding: 3.3rem 0;
+  }
+  .section-three {
+    width: 95%;
+  }
+  .core-info {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 1rem;
+    margin-top: 2rem;
+  }
+  .section-three h2 {
+    font-size: 2rem;
+  }
+  .core-info div {
+    width: 90%;
+  }
+  .core-info div:not(:last-of-type) {
+    margin-bottom: 2rem;
   }
   .core-info div h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
   }
-  .core-info div p {
-    font-size: .5rem;
+}
+@media screen and (max-width: 500px) {
+  .page-header p {
+    width: 90%;
   }
-  .section-three{
-    padding: 2rem;
+  .page-header h3 {
+    font-size: 35px;
+  }
+  .section-two h3 {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
   }
 }

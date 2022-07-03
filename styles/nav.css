@@ -1,116 +1,130 @@
 @import url("http://fonts.cdnfonts.com/css/circular-std");
 
 /* general styles */
-body{
+body {
   font-family: "Circular Std", sans-serif;
 }
-a{
-    text-decoration: none;
-    color: black;
-    margin-left: 0.5rem;
-    margin-top: 1rem;
+a {
+  text-decoration: none;
+  color: black;
 }
-
 
 /* navbar styles */
-header{
+.navbar {
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  padding: 1rem 0;
+  background-color: #fff;
+}
+header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+}
+nav {
+  width: 45%;
+}
+.menu-button {
+  display: none;
+}
+nav a {
+  transition: transform 1s ease-in-out;
+}
+nav a:hover {
+  color: #0000fe;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  list-style: none;
+}
+@media screen and (max-width: 1088px) {
+  header {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .navbar {
+    padding: 1rem 0;
+  }
+  header {
+    width: 90%;
+  }
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 65px;
+    text-align: center;
+    height: 0;
     width: 100vw;
-    max-height: 100px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    overflow: hidden;
+    transition: 0.7s ease-in-out;
+    justify-content: flex-start;
     align-items: center;
-    padding: 1rem 4rem;
-    position: fixed;
-    background-color: white;
-    top: 0;
-    z-index: 5;
-}
-nav{
-    width: 50%;
-}
-nav ul{
+    justify-self: end;
+    margin-top: 3em;
+  }
+  nav li {
+    padding: 1.5rem 0;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-}
-nav ul li{
-    list-style: none;
-    color: #000;
-}
-
-@media screen and (max-width:900px) {
-    header{
-        padding: 1rem 0rem;
-    }
-    nav ul{
-        flex-direction: column;
-        position: absolute;
-        right: 0%;
-        text-align: center;
-        height:0 ;
-        width: 100vw;
-        overflow: hidden;
-        transition: 0.7s ease-in-out;
-        justify-content: flex-start;
-        align-items: center;
-        justify-self: end;
-        margin-top: 3em;
-        background-color: white;
-        
-    }
-    nav li{
-        height: 7em;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-    }
-    nav li:hover{
-        background-color: #a2d9f5da;
-        color: white;
-    }
-    nav{
-        width: auto;
-        height: auto;
-        padding: 0rem 1rem;
-        width: 100vw;
-        justify-content: end;
-        display: flex;         
-    }
-    header img{
-        width: 15vw;
-    }
-    .menu-button{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 20px;
-        width: 20px;
-        padding: 2px;
-        transition: 1s ease-in-out;
-    }
-    .menu-line{
-        width: 100%;
-        height: 10%;
-        background-color: #0000FE;
-        transition: 0.5s;
-
-    }
-    .clicked:nth-child(1){
-        transform: rotate(45deg);
-    }
-    .clicked:nth-child(2){
-       display: none;
-    }
-    .clicked:nth-child(3){
-        transform: rotate(-45deg);
-        margin-top: -10px;
-    }
-    .show{
-        height: 50vh;
-        justify-content: flex-start;
-        align-items: center;
-    }
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    border-bottom: 1px solid #0000fe;
+  }
+  nav a {
+    color: #fff;
+  }
+  nav {
+    width: auto;
+    height: auto;
+    padding: 0rem 1rem;
+    width: 100vw;
+    justify-content: end;
+    display: flex;
+  }
+  .menu-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    padding: 2px;
+    transition: 1s ease-in-out;
+  }
+  .menu-line {
+    width: 100%;
+    border-radius: 50px;
+    height: 5px;
+    width: 30px;
+    background-color: #0000fe;
+    transition: 0.5s;
+  }
+  .clicked:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  .clicked:nth-child(2) {
+    display: none;
+  }
+  .clicked:nth-child(3) {
+    transform: rotate(-45deg);
+    margin-top: -10px;
+  }
+  .show {
+    height: 100vh;
+    background: #000000;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
