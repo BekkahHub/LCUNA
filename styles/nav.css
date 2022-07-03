@@ -56,7 +56,7 @@ nav ul li {
 }
 @media screen and (max-width: 900px) {
   .navbar {
-    padding: 1rem 0;
+    padding: 0.7rem 0;
   }
   header {
     width: 90%;
@@ -69,7 +69,7 @@ nav ul li {
     flex-direction: column;
     position: absolute;
     right: 0;
-    top: 45px;
+    top: 29px;
     text-align: center;
     height: 0;
     width: 100vw;
@@ -86,11 +86,11 @@ nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.02);
+    background-color: #fff;
     border-bottom: 1px solid #0000fe;
   }
   nav a {
-    color: #fff;
+    color: #0000fe;
   }
   nav {
     width: auto;
@@ -130,7 +130,7 @@ nav ul li {
   }
   .show {
     height: 100vh;
-    background: #000000;
+    background: #fff;
     justify-content: flex-start;
     align-items: center;
   }
