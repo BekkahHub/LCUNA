@@ -37,10 +37,12 @@ footer {
 }
 .footer p {
   line-height: 35px;
+  font-family: "DM Sans", sans-serif;
 }
 .footer h4 {
   color: #000000;
   margin-bottom: 30px;
+  font-family: "DM Sans", sans-serif;
 }
 .socials a {
   background: #ebeeff;
