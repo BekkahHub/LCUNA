@@ -6,12 +6,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: "Circular Std", sans-serif;
-}
+
 .page-header {
   padding: 10rem 0 10rem;
-  font-family: "Circular Std", sans-serif;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -26,12 +23,14 @@ body {
   width: 50%;
   font-weight: 100;
   line-height: 30px;
+  font-family: "Circular Std", sans-serif;
 }
 .page-header h3 {
   width: 70%;
   font-size: 50px;
   font-weight: 700;
   margin-bottom: 0.4em;
+  font-family: "Circular Std", sans-serif;
 }
 /* workers section  */
 .workers-section {
@@ -80,11 +79,13 @@ body {
   font-size: 14px;
   color: #2a2a2a;
   margin-bottom: 10px;
+  font-family: "Circular Std", sans-serif;
 }
 .book a {
   border: none;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.7);
+  font-family: "Circular Std", sans-serif;
 }
 
 @media screen and (max-width: 1024px) {

@@ -1,12 +1,11 @@
 @import url("http://fonts.cdnfonts.com/css/circular-std");
 
 /* general styles */
-body {
-  font-family: "Circular Std", sans-serif;
-}
+
 a {
   text-decoration: none;
   color: black;
+  font-family: "Circular Std", sans-serif;
 }
 
 /* navbar styles */
@@ -35,6 +34,7 @@ nav {
 }
 nav a {
   transition: transform 1s ease-in-out;
+  font-family: "Circular Std", sans-serif;
 }
 nav a:hover {
   color: #0000fe;
