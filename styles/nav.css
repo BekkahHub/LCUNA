@@ -19,7 +19,8 @@ a {
   left: 0;
   z-index: 5;
   padding: 1rem 0;
-  background-color: unset;
+  background-color: #0000fe;
+
 }
 header {
   margin: 0 auto;
