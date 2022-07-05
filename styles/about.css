@@ -17,7 +17,21 @@ a {
   text-decoration: none;
   font-family: "Circular Std";
 }
-
+body .navbar {
+  background-color: #0000fe;
+  box-shadow: 0px 0px 0px 0px;
+}
+body nav a {
+  color: #fff;
+  font-family: "Circular Std";
+}
+body nav a:hover {
+  color: #ffff;
+}
+body .navbar img {
+  filter: invert(76%) sepia(8%) saturate(717%) hue-rotate(180deg)
+    brightness(101%) contrast(86%);
+}
 /* page header */
 .page-header {
   padding: 10rem 0 10rem;
@@ -111,6 +125,14 @@ a {
     padding: 4rem 0 8rem 0;
   }
 }
+@media screen and (max-width: 900px) {
+  body .navbar .menu-line {
+    background-color: #fff;
+  }
+  body nav a {
+    color: #0000fe;
+  }
+}
 @media screen and (max-width: 768px) {
   .section-two {
     width: 90%;
@@ -140,6 +162,9 @@ a {
   }
 }
 @media screen and (max-width: 500px) {
+  .page-header {
+    padding: 5.5rem 0 6rem;
+  }
   .page-header p {
     width: 90%;
   }

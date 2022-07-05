@@ -8,7 +8,21 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body .navbar{
+  background-color:  #0000fe;
+  box-shadow: 0px 0px 0px 0px;
+}
+body nav a{
+  color: #fff;
+  font-family: "Circular Std";
+}
+body nav a:hover{
+  color: #ffff;
+}
+body .navbar img{
+  
+  filter: invert(76%) sepia(8%) saturate(717%) hue-rotate(180deg) brightness(101%) contrast(86%);
+}
 .page-header {
   padding: 10rem 0 10rem;
   width: 100%;
@@ -109,9 +123,15 @@ form button {
   margin-top: 2rem;
   border-radius: 5px;
   color: #fff;
+  border: 2px solid #000;
+  transition: 0.5s ease-in;
   font-size: 1.25rem;
   font-family: "Circular Std";
   cursor: pointer;
+}
+form button:hover {
+  background: #fff;
+  color: #000;
 }
 input::placeholder,
 #message::placeholder {
@@ -138,6 +158,14 @@ form label{
     padding: 8rem 0 6rem;
   }
 }
+@media screen and (max-width: 900px) {
+  body .navbar .menu-line {
+    background-color: #fff;
+  }
+  body nav a {
+    color: #0000fe;
+  }
+}
 @media screen and (max-width: 768px) {
   .contact {
     flex-direction: column;
@@ -158,6 +186,9 @@ form label{
   }
 }
 @media screen and (max-width: 500px) {
+  .page-header {
+    padding: 5.5rem 0 6rem;
+  }
   .contact-form {
     width: 100%;
     margin: 0 auto;

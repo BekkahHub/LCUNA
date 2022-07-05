@@ -1,12 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Jost:ital,wght@0,300;0,700;1,200&display=swap");
 @font-face {
-    font-family: "Circular Std";
-    src: url("../styles/Fonts/circular-std-medium-500.ttf");
-  }
+  font-family: "Circular Std";
+  src: url("../styles/Fonts/circular-std-medium-500.ttf");
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body .navbar {
+  background-color: #0000fe;
+  box-shadow: 0px 0px 0px 0px;
+}
+body nav a {
+  color: #fff;
+  font-family: "Circular Std";
+}
+body nav a:hover {
+  color: #ffff;
+}
+body .navbar img {
+  filter: invert(76%) sepia(8%) saturate(717%) hue-rotate(180deg)
+    brightness(101%) contrast(86%);
 }
 .page-header {
   padding: 10rem 0 10rem;
@@ -55,6 +70,14 @@
     padding: 8rem 0 6rem;
   }
 }
+@media screen and (max-width: 900px) {
+  body .navbar .menu-line {
+    background-color: #fff;
+  }
+  body nav a {
+    color: #0000fe;
+  }
+}
 @media screen and (max-width: 768px) {
   .history p {
     font-size: 1rem;
@@ -64,6 +87,9 @@
 @media screen and (max-width: 500px) {
   .page-header p {
     width: 90%;
+  }
+  .page-header {
+    padding: 5.5rem 0 6rem;
   }
   .page-header h3 {
     font-size: 35px;
