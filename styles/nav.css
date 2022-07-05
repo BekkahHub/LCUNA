@@ -14,13 +14,12 @@ a {
 /* navbar styles */
 .navbar {
   width: 100%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 5;
   padding: 1rem 0;
-  background-color: #fff;
+  background-color: unset;
 }
 header {
   margin: 0 auto;

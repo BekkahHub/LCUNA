@@ -11,15 +11,15 @@
 }
 html {
   overflow-x: hidden;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
+  /* background: #0000fe; */
 }
 a {
   text-decoration: none;
   font-family: "Circular Std";
 }
 body .navbar {
-  background-color: #0000fe;
-  box-shadow: 0px 0px 0px 0px;
+  background: #0000fe;
 }
 body nav a {
   color: #fff;
@@ -130,6 +130,9 @@ body .navbar img {
     background-color: #fff;
   }
   body nav a {
+    color: #0000fe;
+  }
+  body nav a:hover{
     color: #0000fe;
   }
 }

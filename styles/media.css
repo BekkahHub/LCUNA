@@ -120,6 +120,9 @@ body .navbar img {
   body nav a {
     color: #0000fe;
   }
+  body nav a:hover{
+    color: #0000fe;
+  }
 }
 @media screen and (max-width: 768px) {
   .workers-section {
