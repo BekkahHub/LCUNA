@@ -9,6 +9,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+body .navbar{
+  background-color:  #0000fe;
+  box-shadow: 0px 0px 0px 0px;
+}
+body nav a{
+  color: #fff;
+  font-family: "Circular Std";
+}
+body nav a:hover{
+  color: #ffff;
+}
+body .navbar img{
+  
+  filter: invert(76%) sepia(8%) saturate(717%) hue-rotate(180deg) brightness(101%) contrast(86%);
+}
 .page-header {
   padding: 10rem 0 10rem;
   width: 100%;
@@ -48,7 +63,7 @@
 .accordion {
   width: 50%;
   height: 70px;
-  background: rgba(0, 0, 0, 0.02);
+  background: #fff;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -57,15 +72,14 @@
   overflow: hidden;
   transition: 0.5s ease-in-out;
   cursor: pointer;
-}
-.accordion:hover {
-  background-color: #0000fe;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 .accordion-text p {
   font-family: "Circular Std";
+  color: #524f4f;
 }
 .accordion:hover .accordion-text p {
-  color: #fff;
+  color: #0000fe;
 }
 .open {
   height: 245px;
@@ -76,7 +90,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #00000005;
 }
 .accordion-text {
   display: flex;
@@ -88,19 +101,20 @@
   text-align: center;
   height: 1.5em;
   width: 1.5em;
+  color: #bbb;
   font-weight: bold;
-  border: 2px solid black;
+  border: 2px solid #bbbbbb;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .accordion:hover .accordion-btn {
-  border: 2px solid white;
-  color: #fff;
+  border: 2px solid #0000fe;
+  color: #0000fe;
 }
 .accordion:hover .accordion-body p {
-  color: #fff;
+  color: #524f4f;
 }
 .accordion-body {
   width: 90%;
@@ -108,20 +122,27 @@
 .accordion-body p {
   text-align: justify;
   font-family: "Circular Std";
-  color: #000000;
+  color: #524f4f;
 }
 @media screen and (max-width: 1024px) {
   .page-header p {
     width: 70%;
   }
   .page-header {
-    padding: 8rem 0 6rem;
+    padding: 8rem 0 6rem; 
   }
   .accordion {
     width: 80vw;
   }
 }
-
+@media screen and (max-width: 900px) {
+  body .navbar .menu-line {
+    background-color: #fff;
+  }
+  body nav a {
+    color: #0000fe;
+  }
+}
 @media screen and (max-width: 768px) {
   .accordion {
     width: 90vw;
@@ -135,6 +156,9 @@
   .page-header h3 {
     width: 90%;
     font-size: 35px;
+  }
+  .page-header {
+    padding: 5.5rem 0 6rem;
   }
   .page-header p {
     width: 90%;

@@ -59,14 +59,13 @@ main,
 .hero-info button:hover {
   background: #0000fe;
   color: #fff;
-  transform: translateY(-10px);
 }
 .hero-image {
   flex-basis: 40%;
 }
-.hero-image img {
+/* .hero-image img {
   width: 100%;
-}
+} */
 
 /* About section  */
 
@@ -83,7 +82,8 @@ main,
   text-align: justify;
   color: #181818;
 }
-.about-section h2, .about-section p {
+.about-section h2,
+.about-section p {
   font-family: "Circular Std";
 }
 
@@ -147,6 +147,12 @@ main,
   padding: 1rem 2rem;
   color: #fff;
   font-family: "Circular Std";
+  border: 1px solid #0000fe;
+  transition: 0.43s ease-out;
+}
+.roles-info a:hover {
+  background: #fff;
+  color: #0000fe;
 }
 .roles-info h3 {
   font-size: 1.875rem;
@@ -296,5 +302,61 @@ main,
   .inner-frame {
     right: -0.5rem;
     top: 0.5rem;
+  }
+}
+
+/* carousel  */
+.mySlides {
+  display: none;
+  /* position: absolute; */
+}
+.mySlides img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
   }
 }
