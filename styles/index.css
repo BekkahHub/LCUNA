@@ -19,6 +19,10 @@ main,
 .usage-section {
   margin: 0 auto;
 }
+body .navbar {
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 /* Hero section  */
 
 .hero-section {
