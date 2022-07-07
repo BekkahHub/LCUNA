@@ -19,7 +19,9 @@ main,
 .usage-section {
   margin: 0 auto;
 }
-
+html, body{
+  overflow-x: hidden;
+}
 
 /* Hero section  */
 .hero{
@@ -44,10 +46,11 @@ main,
   display: inline-block;
   background: #0000fe;
 }
-.hero-info i{
+.hero-info .lcuna{
   color: #0000fe;
   font-weight: bold;
   font-family: "Circular Std";
+  font-style: italic;
 }
 .hero-info h1 {
   font-size: 2.5rem;
@@ -169,7 +172,7 @@ main,
 }
 .outer-frame {
   width: 100%;
-  background: #c4c4c4;
+  /* background: #c4c4c4; */
   border-radius: 10px;
   height: 100%;
 }
