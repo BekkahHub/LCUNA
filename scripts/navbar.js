@@ -89,9 +89,6 @@ const navbar = `
         </li>
         </ul>
     </nav>
-    <div class="training">
-    Join training
-</div>
 </header>
     </div>
 `;
