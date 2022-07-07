@@ -153,9 +153,6 @@ nav ul li{
         justify-content: flex-start;
         align-items: center;
     }
-    .dropdown{
-        display:none;
-    }
     a{
         color:black;
     }
