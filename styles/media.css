@@ -49,61 +49,6 @@ body .navbar img {
   margin-bottom: 0.4em;
   font-family: "Circular Std";
 }
-/* workers section  */
-.workers-section {
-  width: 85%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 4rem 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 2rem;
-  justify-items: center;
-  align-self: center;
-}
-.main {
-  width: 250px;
-  background: #ffffff;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  transition: 0.5s ease-in-out;
-}
-.main:hover {
-  transform: translateX(0.4rem) translateY(-1rem);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.image {
-  width: 250px;
-  height: 250px;
-}
-.img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.book {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 10px;
-  text-align: center;
-}
-.book p {
-  font-weight: 700;
-  font-size: 14px;
-  color: #2a2a2a;
-  margin-bottom: 10px;
-  font-family: "Circular Std";
-}
-.book a {
-  border: none;
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.7);
-  font-family: "Circular Std";
-}
 
 @media screen and (max-width: 1024px) {
   .page-header p {

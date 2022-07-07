@@ -14,6 +14,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://dcoder-x.github.io/htmlReusable/reusable.js"></script>
     <script src="./scripts/footer.js"></script>
@@ -22,41 +24,52 @@
   <body>
     <nav-bar></nav-bar>
     <main>
-      <section class="hero-section">
-        <div class="hero-info">
-          <div>
-            <h1>Liberian Credit Union National Organization</h1>
-            <p>
-              The Liberia Credit Union National Association (LCUNA) is the Apex
-              body of Credit Unions Liberia with the mandate to support the
-              growth and development of credit unions across Liberia.
-            </p>
-          </div>
-          <a
-            href="./Files/Background Of LCUNA.pdf"
-            target="_blank"
-            download="Whitepaper"
-          >
-            <button>Download Whitepaper</button>
-          </a>
-        </div>
-        <div class="hero-image">
-          <div class="slideshow-container">
-            <div class="mySlides fade">
-              <img src="./images/Govern.png" />
+      <div class="hero">
+        <section class="hero-section">
+          <div class="hero-info">
+            <div>
+              <i>LCUNA</i>
+              <h1>
+                Liberian Credit Union <br />
+                <span class="text-line"></span> National Association
+              </h1>
+              <p>
+                The Liberia Credit Union National Association (LCUNA) is the
+                Apex body of Credit Unions Liberia with the mandate to support
+                the growth and development of credit unions across Liberia.
+              </p>
             </div>
-
-            <div class="mySlides fade">
-              <img src="./images/header-image2.png" />
+            <a
+              href="./Files/Background Of LCUNA.pdf"
+              target="_blank"
+              download="Whitepaper"
+            >
+            </a>
+          </div>
+          <div class="hero-image">
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <img src="./images/hero-1.png" />
+              </div>
+              <div class="mySlides fade">
+                <img src="./images/hero-2.png" />
+              </div>
+              <div class="mySlides fade">
+                <img src="./images/hero-3.png" />
+              </div>
+              <div class="mySlides fade">
+                <img src="./images/hero-4.png" />
+              </div>
+            </div>
+            <div style="text-align: center; margin-top: 16px">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
             </div>
           </div>
-          <div style="text-align: center; margin-top: 16px">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <!-- <span class="dot"></span> -->
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
       <section class="about-section">
         <h2>About LCUNA</h2>
         <div>
@@ -105,7 +118,7 @@
           <div class="frame-container">
             <div class="outer-frame">
               <img src="./images/History.png" alt="history" />
-              <div class="inner-frame"></div>
+              <div class="inner-frame frame-color-1"></div>
             </div>
           </div>
           <div class="roles-info">
@@ -116,7 +129,7 @@
               Dallieh of the Catholic Church. In 1969 LCUNA was officially
               established and accredited in 1973 by the Ministry of Agriculture.
             </p>
-            <a class="learn" href="./pages/history.html">Learn More</a>
+            <a  class="color-1" href="./pages/history.html">Learn More &#8594;</a>
           </div>
         </div>
         <div class="rows rows-reverse">
@@ -129,12 +142,12 @@
               standards and good governance practices while the supervisory
               committee ensure Board and Management compliance to set standards.
             </p>
-            <a href="./pages/about.html">Learn More</a>
+            <a href="./pages/about.html" class="color-2">Learn More &#8594;</a>
           </div>
           <div class="frame-container">
             <div class="outer-frame">
               <img src="./images/Govern.png" alt="governance" />
-              <div class="inner-frame"></div>
+              <div class="inner-frame frame-color-2"></div>
             </div>
           </div>
         </div>
@@ -142,11 +155,11 @@
           <div class="frame-container">
             <div class="outer-frame">
               <img src="./images/Goal.png" alt="goal" />
-              <div class="inner-frame"></div>
+              <div class="inner-frame frame-color-3"></div>
             </div>
           </div>
           <div class="roles-info">
-            <h3>Our Goal</h3>
+            <h3>What We Do</h3>
             <p>
               LCUNA primary goal is to reach out to a larger portion of the
               marginalized, poor and hard to reach communities providing
@@ -154,7 +167,7 @@
               communities’ dwellers especially the disadvantage women and
               children.
             </p>
-            <a href="">Learn More</a>
+            <a href="./pages/FAQ.html" class="color-3">Learn More &#8594;</a>
           </div>
         </div>
       </section>

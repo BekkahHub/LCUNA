@@ -9,21 +9,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body .navbar{
-  background-color:  #0000fe;
-  box-shadow: 0px 0px 0px 0px;
-}
-body nav a{
-  color: #fff;
-  font-family: "Circular Std";
-}
-body nav a:hover{
-  color: #ffff;
-}
-body .navbar img{
-  
-  filter: invert(76%) sepia(8%) saturate(717%) hue-rotate(180deg) brightness(101%) contrast(86%);
-}
+
 .page-header {
   padding: 10rem 0 10rem;
   width: 100%;
@@ -135,17 +121,7 @@ body .navbar img{
     width: 80vw;
   }
 }
-@media screen and (max-width: 900px) {
-  body .navbar .menu-line {
-    background-color: #fff;
-  }
-  body nav a {
-    color: #0000fe;
-  }
-  body nav a:hover{
-    color: #0000fe;
-  }
-}
+
 @media screen and (max-width: 768px) {
   .accordion {
     width: 90vw;

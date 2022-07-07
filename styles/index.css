@@ -19,12 +19,13 @@ main,
 .usage-section {
   margin: 0 auto;
 }
-body .navbar {
-  background: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-/* Hero section  */
 
+
+/* Hero section  */
+.hero{
+  width: 100%;
+  background-color: #000000;
+}
 .hero-section {
   width: 85%;
   padding: 10rem 0 6rem;
@@ -33,43 +34,39 @@ body .navbar {
   align-items: center;
 }
 .hero-info {
-  flex-basis: 40%;
+  flex-basis: 50%;
+}
+ .text-line{
+  width: 8%;
+  height: 8px;
+  margin-bottom: 5px;
+  border-radius: 1px;
+  display: inline-block;
+  background: #0000fe;
+}
+.hero-info i{
+  color: #0000fe;
+  font-weight: bold;
+  font-family: "Circular Std";
 }
 .hero-info h1 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   font-family: "Circular Std";
+  color: #fff;
 }
 .hero-info p {
   line-height: 2rem;
   margin-bottom: 1rem;
-  color: rgba(0, 0, 0, 0.7);
-  font-family: "Circular Std";
-}
-.hero-info a {
-  text-decoration: none;
-  font-family: "Circular Std";
-}
-.hero-info button {
-  background: #fff;
-  border: 2px solid #0000fe;
-  padding: 1rem 1.5rem;
-  border-radius: 5px;
-  color: #0000fe;
-  cursor: pointer;
-  font-family: "Circular Std";
-  transition: 0.5s ease-in-out;
-}
-.hero-info button:hover {
-  background: #0000fe;
   color: #fff;
+  font-family: "Circular Std";
+  width: 79%;
 }
+
 .hero-image {
   flex-basis: 40%;
 }
-/* .hero-image img {
-  width: 100%;
-} */
+
 
 /* About section  */
 
@@ -95,6 +92,7 @@ body .navbar {
 
 .usage-section {
   width: 85%;
+  background-color: #fff;
   padding: 4.25rem 0;
   display: flex;
   justify-content: space-between;
@@ -146,17 +144,12 @@ body .navbar {
   width: 40%;
 }
 .roles-info a {
-  background: #0000fe;
   border-radius: 1.875rem;
   padding: 1rem 2rem;
   color: #fff;
   font-family: "Circular Std";
-  border: 1px solid #0000fe;
   transition: 0.43s ease-out;
-}
-.roles-info a:hover {
-  background: #fff;
-  color: #0000fe;
+  text-decoration: none;
 }
 .roles-info h3 {
   font-size: 1.875rem;
@@ -186,9 +179,41 @@ body .navbar {
   object-fit: cover;
   border-radius: 10px;
 }
+.frame-color-1{
+  border: 5px solid #0000fe;
+}
+.frame-color-2{
+  border: 5px solid #ff6202;
+}
+.frame-color-3{
+  border: 5px solid #000000;
+}
+.color-1{
+  background: #0000fe;
+  border: 1px solid #0000fe;
+}
+.color-2{
+  background: #ff6202;
+  border: 1px solid #ff6202;
+}
+.color-3{
+  background: #000000;
+  border: 1px solid #000000;
+}
+.roles-info .color-1:hover {
+  background: #fff;
+  color: #0000fe;
+}
+.roles-info .color-2:hover {
+  background: #fff;
+  color: #FF6202;
+}
+.roles-info .color-3:hover {
+  background: #fff;
+  color: #000000;
+}
 .inner-frame {
   width: 100%;
-  border: 5px solid #0000fe;
   border-radius: 15px;
   position: absolute;
   z-index: -2;
@@ -198,6 +223,12 @@ body .navbar {
 }
 
 @media screen and (max-width: 1024px) {
+  .hero-section{
+    width: 90%;
+  }
+  .hero-info h1 {
+    font-size: 1.9rem;
+  }
   .hero-info {
     flex-basis: 50%;
   }
@@ -235,6 +266,9 @@ body .navbar {
   }
   .hero-info {
     margin-bottom: 2.5rem;
+  }
+  .hero-info i{
+    font-size: 0.8rem;
   }
   .hero-image {
     align-self: flex-start;
@@ -283,16 +317,23 @@ body .navbar {
   .roles-info {
     width: 100%;
   }
+  .text-line{
+    width: 5%;
+  }
 }
 
 @media screen and (max-width: 500px) {
-  .hero-info h1 {
-    font-size: 1.9rem;
-  }
   .hero-info p {
     line-height: 1.8rem;
     color: #6f6c6c;
+    width: 100%;
+    text-align: justify;
   }
+  .hero-info h1{
+    font-size: 1.6rem;
+    margin: 0.8rem 0;
+  }
+  
   .hero-info a {
     text-decoration: none;
   }
@@ -319,6 +360,8 @@ body .navbar {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  box-shadow: 0px 0px 20px #0000fe;
+  border-radius: 20px;
 }
 
 /* Slideshow container */
@@ -333,14 +376,14 @@ body .navbar {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #fff;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active {
-  background-color: #717171;
+  background-color: #0000fe;
 }
 
 /* Fading animation */
