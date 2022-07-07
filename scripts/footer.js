@@ -1,4 +1,3 @@
-
 const footer = ` 
 <link rel="stylesheet" href="../styles/footer.css" />
 <footer>
@@ -53,21 +52,12 @@ const footer = `
   <div>
     <h4>Info</h4>
     <p>
-      help@lcuna.com <br />
-      +000 000 0000
+    <a> Bob Taylor Road, Red-Light, <br/> Paynesville, Monrovia, Liberia <br/> +231 88 659 7949 </a>
     </p>
   </div>
 
-  <div>
-    <h4>Legal</h4>
-    <p><a href="./about.html">Terms of Use</a></p>
-    <p><a href="./about.html">Privacy Policy</a></p>
-    <p><a href="./about.html">Disclaimer</a></p>
-    <p><a href="./about.html">End User Agreement</a></p>
-  </div>
 </div>
-<p class="help">help@lcuna.com</p>
 </footer>
-`
+`;
 
-reuse('footer-component',footer,false,true)
+reuse("footer-component", footer, false, true);

@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Jost:ital,wght@0,300;0,700;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Jost:ital,wght@0,300;0,700;1,200&display=swap");
+@font-face {
+  font-family: "Circular Std";
+  src: url("../styles/Fonts/circular-std-medium-500.ttf");
+}
+
+.register {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+.background {
+  width: 50%;
+  background: #000000;
+  padding: 69px;
+  display: flex;
+  justify-content: start;
+  position: relative;
+  align-items: center;
+}
+.background a {
+  color: #0000fe;
+  text-decoration: none;
+  font-size: 1.25rem;
+  letter-spacing: 0.5em;
+  font-family: "Circular Std";
+  position: absolute;
+  top: 69px;
+  left: 69px;
+}
+
+.description h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Circular Std";
+}
+.description .shrink {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+.description .shrink img {
+  margin-right: -15px;
+}
+.background .join {
+  color: #fff;
+  margin-left: 30px;
+  font-family: "Circular Std";
+}
+.registration-form {
+  width: 50%;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+.registration-form form {
+  width: 65%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.form-info {
+  width: 90%;
+  margin-bottom: 20px;
+}
+.form-info h2 {
+  font-size: 2rem;
+  font-family: "Circular Std";
+  margin-bottom: 1rem;
+}
+.form-info p {
+  font-family: "Circular Std";
+  width: 80%;
+  color: rgba(0, 0, 0, 0.7);
+}
+.registration-form form input {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Circular Std";
+}
+.registration-form form input::placeholder {
+  color: #979797;
+}
+.registration-form form select {
+  background-color: transparent;
+  background-image: url(/images/down-grey.svg);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  background-position: right 20px center;
+  background-repeat: no-repeat;
+  background-size: auto 15%;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  height: 50px;
+  color: #979797;
+  -moz-appearance: none;
+  font-family: "Circular Std";
+  -webkit-appearance: none;
+  appearance: none;
+  width: 48%;
+}
+.registration-form form select option {
+  font-size: 18px;
+  background: rgb(231, 224, 224);
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.16);
+  color: #191f2b;
+}
+.form-split {
+  display: flex;
+  justify-content: space-between;
+}
+.form-split input {
+  width: 48%;
+}
+.registration-form form button {
+  padding: 1rem;
+  background: #0000fe;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 8px;
+  color: #fff;
+  border: 2px solid #0000fe;
+  transition: 0.5s ease-in;
+  font-size: 1.25rem;
+  font-family: "Circular Std";
+  cursor: pointer;
+}
+.registration-form form input:focus,
+.registration-form form select:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px #0000fe65;
+}
+.registration-form form button:hover {
+  background: #fff;
+  color: #0000fe;
+}
+
+@media screen and (max-width: 1024px) {
+  .background {
+    padding: 30px;
+  }
+  .background a {
+    top: 30px;
+    left: 30px;
+  }
+  .registration-form form {
+    width: 85%;
+  }
+  .form-info{
+    width: 100%;
+  }
+  .form-info p{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .background {
+    padding: 50px 30px 100px 30px;
+    width: 100%;
+    display: unset;
+    flex-direction: column;
+    border-radius: 0px 0px 50px 50px;
+  }
+  .background a {
+    position: unset;
+  }
+  .description{
+    margin-bottom: 1rem;
+  }
+  .registration-form form {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .register{
+    flex-direction: column;
+  }
+  .registration-form{
+    width: 70%;
+    margin: 50px auto;
+  }
+}
+@media screen and (max-width: 425px) {
+.registration-form{
+    width: 90%;
+}
+}
