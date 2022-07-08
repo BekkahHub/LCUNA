@@ -336,7 +336,9 @@ html, body{
     font-size: 1.6rem;
     margin: 0.8rem 0;
   }
-  
+  .hero-section{
+    padding: 8rem 0 6rem;
+  }
   .hero-info a {
     text-decoration: none;
   }

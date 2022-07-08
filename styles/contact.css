@@ -8,6 +8,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html, body{
+  overflow-x: hidden;
+}
 .page-header {
   padding: 10rem 0 10rem;
   width: 100%;
@@ -166,11 +169,14 @@
   .page-header {
     padding: 5.5rem 0 6rem;
   }
+  .contact{
+    width: 90%;
+  }
   .contact-form {
     width: 100%;
     margin: 0 auto;
   }
-  form {
+ .contact-form form {
     width: 90%;
     margin: 0 auto;
   }
@@ -187,5 +193,8 @@
   form button {
     padding: 1rem;
     font-size: 1rem;
+  }
+  .contact-form form input, .contact-form form button{
+    padding: 1rem;
   }
 }

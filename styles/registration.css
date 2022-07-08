@@ -4,7 +4,9 @@
   font-family: "Circular Std";
   src: url("../styles/Fonts/circular-std-medium-500.ttf");
 }
-
+html, body{
+    overflow-x: hidden;
+}
 .register {
   width: 100%;
   min-height: 100vh;

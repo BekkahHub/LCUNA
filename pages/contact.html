@@ -11,8 +11,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <script src="https://dcoder-x.github.io/htmlReusable/reusable.js"></script>
     <script src="../scripts/footer.js"></script>
@@ -23,8 +31,8 @@
     <nav-bar></nav-bar>
     <main>
       <div class="page-header">
-        <h3>Contact us</h3>
-        <p>
+        <h3 class="animate__animated animate__zoomIn">Contact us</h3>
+        <p class="animate__animated animate__zoomIn">
           As a financial cooperative, we support the development of Credit
           Unions to enable them to provide valuable and sustainable financial
           services to their members. LCUNA is affiliated to both the WOCCU and
@@ -33,12 +41,16 @@
       </div>
       <div class="contact">
         <div class="contact-banner">
-          <h6>wanna talk to us?</h6>
-          <h2>How can we help you?</h2>
+          <h6 data-aos="fade-right">wanna talk to us?</h6>
+          <h2 data-aos="fade-right" data-aos-duration="3000">
+            How can we help you?
+          </h2>
           <img src="../images/line.svg" alt="" />
         </div>
-        <h3>How can we help you?</h3>
-        <div class="contact-form">
+        <h3 class="animate__animated animate__slideInLeft">
+          How can we help you?
+        </h3>
+        <div class="contact-form" data-aos="fade-left" data-aos-duration="3000">
           <form>
             <label for="full-name">Full name</label>
             <input
@@ -62,7 +74,7 @@
               cols="30"
               rows="10"
             ></textarea>
-            <button>Send</button>
+            <button data-aos="fade-up">Send</button>
           </form>
         </div>
       </div>
