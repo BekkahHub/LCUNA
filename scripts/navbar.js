@@ -59,7 +59,7 @@ const navbar = `
                 <a class="menu" >Media</a>
                 <div class="dropdown">
                     <div class="dropmenu">
-                        <a> Blogs</a>
+                        <a href='../pages/blog.html'> Blogs</a>
                     </div>
                     <div class="dropmenu">
                         <a>News</a>
