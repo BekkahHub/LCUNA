@@ -18,14 +18,23 @@ a.forEach((element,index) => {
       dropdown.forEach((drop)=>{
         drop.classList.remove('show-dropdown')
       })
+      const isOpened = dropdown[index].classList.contains('show-dropdown')
+      console.log(isOpened)
+      if (isOpened) {
+        console.log(isOpened)
+        dropdown[index].classList.add('show-dropdown')
+      }
+      else{
+        dropdown[index].classList.remove('show-dropdown')
+      }
         
-        dropdown[index].classList.toggle('show-dropdown')
-        if (dropdown.classList.contains('show-dropdown')) {
+        if (isOpened) {
           li[index].classList.add('show')
         }
         else{
           li[index].classList.remove('show')
         }
+         
     }
 });
 
