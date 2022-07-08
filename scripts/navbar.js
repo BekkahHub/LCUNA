@@ -13,85 +13,83 @@ const navbar = `
         </div>
         <ul>
             <li>
-                <a >About</a>
+                <a class="menu">About Us</a>
                 <div class="dropdown">
                     <div class="dropmenu">
-                        <p>History of LCUNA</p>
+                        <a href="../pages/history.html">History of LCUNA</a>
                     </div>
                     <div class="dropmenu">
-                        <p>Roles of LCUNA</p>
+                        <a hr>Roles of LCUNA</a>
                     </div>
                     <div class="dropmenu">
-                        <p>Organogram of LCUNA</p>
+                        <a>Organogram of LCUNA</a>
                     </div>
                     <div class="dropmenu">
-                        <p>Leadership Board</p>
+                        <a>Leadership Board</a>
                     </div>
                     <div class="dropmenu">
-                        <p>Registered Credit Unions</p>
+                        <a>Registered Credit Unions</a>
                     </div>
                     <div class="dropmenu">
-                        <p>Loan Marketplace</p>
+                        <a>Loan Marketplace</a>
                     </div>
                 </div>
             </li>
             <li>
-                <a >Registrations</a>
+                <a class="menu">Registrations</a>
                 <div class="dropdown">
                     <div class="dropmenu">
-                        <p> Register</p>
+                        <a href="../pages/registrationguide.html"> Register</a>
                     </div>
                     <div class="dropmenu">
-                        <p>Register a Credit Union</p>
+                        <a>Register a Credit Union</a>
                     </div>
                     <div class="dropmenu">
-                        <p>Register Guidelines</p>
+                        <a>Register Guidelines</a>
                     </div>
                     <div class="dropmenu">
-                        <p>Download Forms</p>
+                        <a>Download Forms</a>
                     </div>
                     <div class="dropmenu">
-                        <p>Download Document</p>
+                        <a>Download Document</a>
                     </div>
                 </div>
             </li>
             <li>
-                <a >Media</a>
+                <a class="menu" >Media</a>
                 <div class="dropdown">
                     <div class="dropmenu">
-                        <p> Blogs</p>
+                        <a href='../pages/blog.html'> Blogs</a>
                     </div>
                     <div class="dropmenu">
-                        <p>News</p>
+                        <a>News</a>
                     </div>
                     <div class="dropmenu">
-                        <p>Picture Gallery</p>
+                        <a>Picture Gallery</a>
                     </div>
                     <div class="dropmenu">
-                        <p>Video Gallery</p>
+                        <a>Video Gallery</a>
                     </div>
                     <div class="dropmenu">
-                        <p>Events</p>
+                        <a>Events</a>
                     </div>
                     <div class="dropmenu">
-                        <p>Downloads</p>
+                        <a>Downloads</a>
                     </div>
                 </div>
             </li>
             <li>
-            <a href="../pages/FAQ.html">FAQ</a>
-        </li>
-        <li>
-            <a href="../pages//history.html">History</a>
-        </li>
-        <li>
-            <a href="../pages/contact.html">Contact</a>
-        </li>
+                <a href="../pages/FAQ.html">FAQ</a>
+            </li>
+            <li>
+                <a href="../pages//history.html">History</a>
+            </li>
+            <li>
+                <a href="../pages/contact.html">Contact Us</a>
+            </li>
         </ul>
     </nav>
-    <div class="training">
-    Join training
-</div>
+  
 </header>
     </div>
 `;
