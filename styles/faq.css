@@ -9,6 +9,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html, body {
+  overflow-x: hidden;
+}
 
 .page-header {
   padding: 10rem 0 10rem;
