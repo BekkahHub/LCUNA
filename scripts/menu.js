@@ -13,18 +13,19 @@ menuBtn.onclick= e=>{
  
 
 a.forEach((element,index) => {
-    const dropdown= document.querySelectorAll('.dropdown')[index]
-    element.onclick=()=>{
+    const dropdown= document.querySelectorAll('.dropdown')
+    element.onclick=(e)=>{
+      dropdown.forEach((drop)=>{
+        drop.classList.remove('show-dropdown')
+      })
         
-        dropdown.classList.toggle('show-dropdown')
+        dropdown[index].classList.toggle('show-dropdown')
         if (dropdown.classList.contains('show-dropdown')) {
           li[index].classList.add('show')
         }
         else{
           li[index].classList.remove('show')
         }
-        
-       
     }
 });
 
