@@ -1,20 +1,20 @@
 
 const navBar = document.querySelector('.nav-bar')
-const menu = document.querySelectorAll('.menu')
+// const menu = document.querySelectorAll('.menu')
 const content = document.querySelectorAll('.content')
 
 
 
-menu.forEach((menu)=>{
-    menu.onmouseover=(e)=>{
-        e.preventDefault()
-        e.target.firstElementChild.style.transform='scale(1)'
-    }
-    menu.onmouseleave=(e)=>{
-        e.preventDefault()
-        e.target.firstElementChild.style.transform='scale(0)'
-    }
- });
+// menu.forEach((menu)=>{
+//     menu.onmouseover=(e)=>{
+//         e.preventDefault()
+//         e.target.firstElementChild.style.transform='scale(1)'
+//     }
+//     menu.onmouseleave=(e)=>{
+//         e.preventDefault()
+//         e.target.firstElementChild.style.transform='scale(0)'
+//     }
+//  });
  
 
  
