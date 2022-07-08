@@ -8,7 +8,7 @@ const navBar = `
   </a></div>
   <div class="nav-links">
     <div class="sidebar-logo">
-      <span class="logo-name">LCUNA</span>
+      <a href="/index.html" class="logo-name">LCUNA</a>
       <i class='bx bx-x' ></i>
     </div>
     <ul class="links">
