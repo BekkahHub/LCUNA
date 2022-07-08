@@ -27,22 +27,31 @@
        
 //     }
 // });
-a.forEach((element,index) => {
-    const dropdown= document.querySelectorAll('.dropdown')
-    element.onclick=(e)=>{
-      dropdown.forEach((drop)=>{
-        drop.classList.remove('show-dropdown')
-      })
+// a.forEach((element,index) => {
+//     const dropdown= document.querySelectorAll('.dropdown')
+//     element.onclick=(e)=>{
+//       dropdown.forEach((drop)=>{
+//         drop.classList.remove('show-dropdown')
+//       })
+//       const isOpened = dropdown[index].classList.contains('show-dropdown')
+//       console.log(isOpened)
+//       if (isOpened) {
+//         console.log(isOpened)
+//         dropdown[index].classList.add('show-dropdown')
+//       }
+//       else{
+//         dropdown[index].classList.remove('show-dropdown')
+//       }
         
-        dropdown[index].classList.toggle('show-dropdown')
-        if (dropdown.classList.contains('show-dropdown')) {
-          li[index].classList.add('show')
-        }
-        else{
-          li[index].classList.remove('show')
-        }
-    }
-});
+//         if (isOpened) {
+//           li[index].classList.add('show')
+//         }
+//         else{
+//           li[index].classList.remove('show')
+//         }
+         
+//     }
+// });
 
 // window.onclick = function(event) {
 //     if (!event.target.matches('a')) {
@@ -60,13 +69,13 @@ a.forEach((element,index) => {
 
 
   // search-box open close js code
-  let navbar = document.querySelector(".navbar");
+  let navBar = document.querySelector(".navbar");
   let searchBox = document.querySelector(".search-box .bx-search");
   // let searchBoxCancel = document.querySelector(".search-box .bx-x");
   
   searchBox.addEventListener("click", ()=>{
-    navbar.classList.toggle("showInput");
-    if(navbar.classList.contains("showInput")){
+    navBar.classList.toggle("showInput");
+    if(navBar.classList.contains("showInput")){
       searchBox.classList.replace("bx-search" ,"bx-x");
     }else {
       searchBox.classList.replace("bx-x" ,"bx-search");
