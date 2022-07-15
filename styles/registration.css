@@ -22,15 +22,17 @@ html, body{
   position: relative;
   align-items: center;
 }
-.background a {
-  color: #0000fe;
-  text-decoration: none;
+.background h3  {
   font-size: 1.25rem;
   letter-spacing: 0.5em;
   font-family: "Circular Std";
   position: absolute;
   top: 69px;
   left: 69px;
+}
+.background h3 a{
+  color: #0000fe;
+  text-decoration: none;
 }
 
 .description h2 {
@@ -144,7 +146,7 @@ html, body{
   .background {
     padding: 30px;
   }
-  .background a {
+  .background h3 {
     top: 30px;
     left: 30px;
   }
