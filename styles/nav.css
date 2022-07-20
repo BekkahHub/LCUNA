@@ -7,7 +7,7 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 nav{
   position: fixed;
@@ -17,18 +17,17 @@ nav{
   height: 100%;
   height: 85px;
   background: #000;
+
   z-index: 99;
 }
 nav .navbar{
   height: 100%;
-  /* max-width: 1250px; */
   width: 85%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  /* background: red; */
-  /* padding: 0 50px; */
+
 }
 .navbar .logo a{
   text-decoration: none;
@@ -148,6 +147,10 @@ nav .navbar .links li:hover .js-sub-menu{
     width: 40px;
     height: 40px;
   }
+  .navbar .links li .sub-menu a{
+    color: #f9f2f2f5;
+    border-bottom: 1px solid #0000fe;
+  }
   nav .navbar .logo a{
     font-size: 27px;
   }
@@ -234,10 +237,8 @@ nav .navbar .links li .sub-menu li{
     display: none;
   }
   .navbar .links li .sub-menu .more span{
-    /* background: red; */
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
   }
 
   .links li .sub-menu .more:hover .more-sub-menu{
@@ -251,7 +252,6 @@ nav .navbar .links li .sub-menu li{
 .navbar .nav-links.show1 .links .htmlCss-sub-menu,
 .navbar .nav-links.show4 .links .htmlCss-sub-menu-1,
   .navbar .nav-links.show3 .links .js-sub-menu,
-  /* .navbar .nav-links.show4 .links .about-arrow, */
   .navbar .nav-links.show2 .links .more .more-sub-menu{
       display: block;
     }

@@ -12,6 +12,9 @@
 html, body {
   overflow-x: hidden;
 }
+body nav{
+  background-color: #000;
+}
 
 .page-header {
   padding: 10rem 0 10rem;
