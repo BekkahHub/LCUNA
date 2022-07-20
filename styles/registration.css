@@ -4,8 +4,9 @@
   font-family: "Circular Std";
   src: url("../styles/Fonts/circular-std-medium-500.ttf");
 }
-html, body{
-    overflow-x: hidden;
+html,
+body {
+  overflow-x: hidden;
 }
 .register {
   width: 100%;
@@ -22,7 +23,7 @@ html, body{
   position: relative;
   align-items: center;
 }
-.background h3  {
+.background h3 {
   font-size: 1.25rem;
   letter-spacing: 0.5em;
   font-family: "Circular Std";
@@ -30,7 +31,7 @@ html, body{
   top: 69px;
   left: 69px;
 }
-.background h3 a{
+.background h3 a {
   color: #0000fe;
   text-decoration: none;
 }
@@ -153,10 +154,10 @@ html, body{
   .registration-form form {
     width: 85%;
   }
-  .form-info{
+  .form-info {
     width: 100%;
   }
-  .form-info p{
+  .form-info p {
     width: 100%;
   }
 }
@@ -171,23 +172,23 @@ html, body{
   .background a {
     position: unset;
   }
-  .description{
+  .description {
     margin-bottom: 1rem;
   }
   .registration-form form {
     width: 100%;
     margin-top: 2rem;
   }
-  .register{
+  .register {
     flex-direction: column;
   }
-  .registration-form{
+  .registration-form {
     width: 70%;
     margin: 50px auto;
   }
 }
 @media screen and (max-width: 425px) {
-.registration-form{
+  .registration-form {
     width: 90%;
-}
+  }
 }
