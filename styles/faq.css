@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Jost:ital,wght@0,300;0,700;1,200&display=swap");
 @font-face {
-    font-family: "Circular Std";
-    src: url("../styles/Fonts/circular-std-medium-500.ttf");
-  }
+  font-family: "Circular Std";
+  src: url("../styles/Fonts/circular-std-medium-500.ttf");
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
-body nav{
+body nav {
   background-color: #000;
 }
 
@@ -121,7 +122,7 @@ body nav{
     width: 70%;
   }
   .page-header {
-    padding: 8rem 0 6rem; 
+    padding: 8rem 0 6rem;
   }
   .accordion {
     width: 80vw;

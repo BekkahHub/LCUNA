@@ -67,10 +67,7 @@ footer {
   flex-wrap: wrap;
   overflow: hidden;
 }
-.socials a img {
-  filter: invert(9%) sepia(89%) saturate(6197%) hue-rotate(245deg)
-    brightness(101%) contrast(149%);
-}
+
 @media screen and (max-width: 1024px) {
   .footer {
     width: 90%;
