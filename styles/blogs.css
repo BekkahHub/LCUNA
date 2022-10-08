@@ -3,45 +3,32 @@
   font-family: "Circular Std";
   src: url("../styles/Fonts/circular-std-medium-500.ttf");
 }
-body .navbar {
-  background-color: #0000fe;
-  box-shadow: 0px 0px 0px 0px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body nav a {
-  color: #fff;
-  font-family: "Circular Std";
+html, body{
+  overflow-x: hidden;
 }
-body nav a:hover {
-  color: #ffff;
-}
-body .navbar img {
-  filter: invert(76%) sepia(8%) saturate(717%) hue-rotate(180deg)
-    brightness(101%) contrast(86%);
-}
+
 .page-header {
-  padding: 10rem 0 10rem;
+  padding: 8rem 0;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  margin-top: 4em;
-}
-.page-header p {
-  width: 50%;
-  font-weight: 100;
-  line-height: 30px;
-  font-family: "Circular Std";
+  background-attachment: fixed;
+  background-image: linear-gradient(#000009c3, #000009c3),
+    url(../images/bg-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .page-header h3 {
-  width: 70%;
+  width: 100%;
   font-size: 50px;
   font-weight: 700;
-  margin-bottom: 0.4em;
   font-family: "Circular Std";
+  text-align: center;
+  color: #fff;
 }
 .news {
   display: flex;

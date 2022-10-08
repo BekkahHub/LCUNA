@@ -1,3 +1,15 @@
+// header scroll
+const scrollTop = document.querySelector("nav");
+window.onscroll = () => {
+  var top = window.scrollY;
+  console.log(top);
+  if (top >= 100) {
+    scrollTop.classList.add("scroll");
+  } else {
+    scrollTop.classList.remove("scroll");
+  }
+};
+
 // search-box open close js code
 let navbar = document.querySelector(".navbar");
 
