@@ -27,46 +27,35 @@ body {
 /* Hero section  */
 .hero {
   width: 100%;
-  background-color: #000000;
+  background-attachment: fixed;
+  background-image: linear-gradient(#000009c3,#000009c3),url(../images/bg-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
 }
 .hero-section {
-  width: 85%;
+  width: 90%;
   padding: 10rem 0 6rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .hero-info {
-  flex-basis: 50%;
   min-height: 489px;
   position: relative;
 }
-.text-line {
-  width: 8%;
-  height: 8px;
-  margin-bottom: 5px;
-  border-radius: 1px;
-  display: inline-block;
-  background: #0000fe;
-}
-.hero-info .lcuna {
-  color: #0000fe;
-  font-weight: bold;
-  font-family: "Circular Std";
-  font-style: italic;
-}
+
+
 .hero-info h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin: 1rem 0;
   font-family: "Circular Std";
   color: #fff;
+  width: 45%;
 }
 .hero-info p {
   line-height: 2rem;
   margin-bottom: 1rem;
   color: #fff;
   font-family: "Circular Std";
-  width: 79%;
+  width: 40%;
   text-align: left;
 }
 .hero-info p a {
@@ -74,57 +63,13 @@ body {
   font-family: "Circular Std";
   color: #fff;
 }
-
-.hero-image {
-  flex-basis: 40%;
-}
-
-/* About section  */
-
-.about-section {
-  background: #f5f5f5;
-  padding: 3.063rem 6.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.about-section div {
-  flex-basis: 60%;
-  line-height: 2rem;
-  text-align: justify;
-  color: #181818;
-}
-.about-section h2,
-.about-section p {
-  font-family: "Circular Std";
-}
-
-/* Usage section  */
-
-.usage-section {
-  width: 85%;
-  background-color: #fff;
-  padding: 4.25rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  text-align: center;
-  flex-wrap: wrap;
-}
-.usage-section div {
-  flex-basis: 25%;
-}
-.usage-info h3 {
+#lcuna{ 
   color: #0000fe;
-  font-family: "Circular Std";
-  margin-bottom: 1rem;
+  font-weight: 600;
 }
-.usage-info p {
-  line-height: 1.7rem;
-  color: rgba(0, 0, 0, 0.8);
-  font-family: "Circular Std";
+#paragraph{
+  width: 100%;
 }
-
 /* Roles section  */
 .roles-section {
   width: 85%;
@@ -399,14 +344,14 @@ body {
 }
 /* text slides styles */
 .readBtn {
-  border-radius: 1.875rem;
+  border-radius: 8px;
   padding: 1rem;
-  background-color: #fff;
-  color: #000 !important;
+  background-color: #0000fe;
+  color: #fff;
 }
 .readBtn:hover {
   background-color: #4040c5;
-  color: #fff !important;
+  color: #fff;
 }
 .before::before {
   content: "\2022";
@@ -415,6 +360,9 @@ body {
 
 .mySlidesTwo {
   display: none;
+}
+.mySlidesTwo p{
+  width: 60%;
 }
 img {
   vertical-align: middle;

@@ -19,21 +19,22 @@ const navBar = `
         <a href="#">About</a>
         <i class="bx bxs-chevron-down about-arrow arrow"></i>
         <ul class="htmlCss-sub-menu-1 sub-menu">
+          <li><a href="../pages/about.html">About LCUNA</a></li>
           <li><a href="../pages/history.html">History of LCUNA</a></li>
-          <li><a href="../pages/about.html">Roles of LCUNA</a></li>
-          <li><a href="#">Leadership Board</a></li>
-          <li><a href="#">Register Credit Union</a></li>
-          <li><a href="#">Credit Union Policy</a></li>
-          <li><a href="#">Loan Marketplace</a></li>
+          <li>
+            <a href="../pages/leadershipboard.html">Leadership Board</a>
+          </li>
         </ul>
       </li>
       <li>
         <a href="#">Register</a>
         <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
         <ul class="htmlCss-sub-menu sub-menu">
-          <li><a href="../pages/register.html">Register</a></li>
+          <li>
+            <a href="../pages/register.html">Register for Training</a>
+          </li>
           <li><a href="#">Register a Credit Union</a></li>
-          <li><a href="#">Registeration Guidelines</a></li>
+          <li><a href="#">Registration Guidelines</a></li>
           <li><a href="#">Download Forms</a></li>
           <li><a href="#">Downloads Document</a></li>
         </ul>
@@ -42,11 +43,8 @@ const navBar = `
         <a href="#">Media</a>
         <i class="bx bxs-chevron-down js-arrow arrow"></i>
         <ul class="js-sub-menu sub-menu">
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Picture Gallery</a></li>
-          <li><a href="#">Video Gallery</a></li>
-          <li><a href="#">Events</a></li>
+          <li><a href="../pages/blogs.html">News and Blogs</a></li>
+          <li><a href="../pages/gallery.html">Gallery</a></li>
         </ul>
       </li>
       <li><a href="../pages/FAQ.html">FAQ</a></li>
