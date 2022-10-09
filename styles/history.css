@@ -14,7 +14,8 @@
   display: flex;
   background-attachment: fixed;
   background-image: linear-gradient(#000009c3, #000009c3),
-    url(../images/bg-1.png);
+    url(../images/History.png);
+    background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -34,22 +35,26 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  padding: 4rem 0;
+  padding: 4rem 0 3rem;
 }
 .section-two h3 {
   font-size: 1.85rem;
   line-height: 3.438rem;
-  text-align: justify;
+  text-align: start;
   font-family: "Circular Std";
+}
+.section-two a{
+  text-decoration: none;
+  font-family: "Circular Std";
+  color: #0000fe;
 }
 .history {
   width: 85%;
   margin: 0 auto;
-  padding: 5rem 0;
+  padding: 1rem 0;
 }
 .history p {
-  margin-bottom: 1.5rem;
-  text-align: justify;
+  text-align: left;
   color: #717171;
   line-height: 2.4rem;
   font-size: 1.25rem;

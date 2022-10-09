@@ -31,44 +31,55 @@ body {
   background-image: linear-gradient(#000009c3,#000009c3),url(../images/bg-1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  position: relative;
 }
 .hero-section {
   width: 90%;
-  padding: 10rem 0 6rem;
-}
-.hero-info {
-  min-height: 489px;
-  position: relative;
+  padding: 10rem 0 10rem;
 }
 
-
-.hero-info h1 {
+.hero-section h1 {
   font-size: 2.8rem;
   margin: 1rem 0;
   font-family: "Circular Std";
   color: #fff;
   width: 45%;
 }
-.hero-info p {
+.hero-section p {
   line-height: 2rem;
   margin-bottom: 1rem;
   color: #fff;
   font-family: "Circular Std";
-  width: 40%;
+  width: 70%;
   text-align: left;
 }
-.hero-info p a {
+
+.hero-section p a {
   text-decoration: none;
   font-family: "Circular Std";
-  color: #fff;
+  color: #0000fe;
 }
 #lcuna{ 
   color: #0000fe;
   font-weight: 600;
 }
-#paragraph{
-  width: 100%;
+.readBtn {
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #0000fe;
+  color: #fff;
+}
+.readBtn:hover {
+  background-color: #4040c5;
+  color: #fff;
+}
+.arrow-dots{
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-top: 5rem;
 }
 /* Roles section  */
 .roles-section {
@@ -181,24 +192,11 @@ body {
   .hero-section {
     width: 90%;
   }
-  .hero-info h1 {
+  .hero-section h1 {
     font-size: 1.9rem;
   }
-  .hero-info {
-    flex-basis: 50%;
-  }
-  .hero-image {
-    flex-basis: 40%;
-  }
-  .about-section {
-    padding: 3.063rem 5rem;
-  }
-  .about-section div {
-    flex-basis: 70%;
-  }
-  .usage-section div {
-    flex-basis: 40%;
-    margin-bottom: 2rem;
+  .hero-section p{
+    width: 100%;
   }
   .frame-container {
     position: relative;
@@ -219,36 +217,12 @@ body {
     flex-direction: column;
     width: 90%;
   }
-  .hero-info {
-    margin-bottom: 2.5rem;
-    width: 100%;
-    min-height: 330px;
-  }
-  .hero-info i {
-    font-size: 0.8rem;
+
+  .hero-section h1 {
+    width: 90%;
   }
   .hero-image {
     align-self: flex-start;
-  }
-  .about-section {
-    flex-direction: column;
-    text-align: center;
-    padding: 3.063rem 0;
-  }
-  .about-section h2 {
-    margin-bottom: 2rem;
-  }
-  .about-section div {
-    line-height: 1.8rem;
-    width: 90%;
-  }
-  .usage-section {
-    flex-direction: column;
-    text-align: center;
-    width: 90%;
-  }
-  .usage-info h3 {
-    margin-bottom: 0.5rem;
   }
   .rows {
     flex-direction: column;
@@ -274,28 +248,20 @@ body {
   .roles-info {
     width: 100%;
   }
-  .text-line {
-    width: 5%;
-  }
+
 }
 
 @media screen and (max-width: 500px) {
-  .hero-info p {
+  .hero-section p {
     line-height: 1.8rem;
     width: 100%;
   }
-  .hero-info h1 {
+  .hero-section h1 {
     font-size: 1.6rem;
     margin: 0.8rem 0;
   }
   .hero-section {
     padding: 8rem 0 6rem;
-  }
-  .hero-info a {
-    text-decoration: none;
-  }
-  .hero-info button {
-    width: 100%;
   }
   .frame-container {
     width: 100%;
@@ -307,144 +273,3 @@ body {
   }
 }
 
-/* carousel  */
-.mySlides {
-  display: none;
-  /* position: absolute; */
-}
-.mySlides img {
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  box-shadow: 0px 0px 20px #7e7e83;
-  border-radius: 20px;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-/* text slides styles */
-.readBtn {
-  border-radius: 8px;
-  padding: 1rem;
-  background-color: #0000fe;
-  color: #fff;
-}
-.readBtn:hover {
-  background-color: #4040c5;
-  color: #fff;
-}
-.before::before {
-  content: "\2022";
-  margin-right: 10px;
-}
-
-.mySlidesTwo {
-  display: none;
-}
-.mySlidesTwo p{
-  width: 60%;
-}
-img {
-  vertical-align: middle;
-}
-
-/* Slideshow container */
-.slideshow-container-two {
-  width: 100%;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  width: auto;
-  color: #0000fe;
-  font-weight: bolder;
-  font-size: 30px;
-  transition: 0.6s ease;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  bottom: -5px;
-}
-.prev{
-bottom: -5px;
-right: 50px;
-}
-.allDots{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  color: #bbb;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 12px;
-  width: 12px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: #0000fe;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev,
-  .next,
-  .text {
-    font-size: 11px;
-  }
-}
