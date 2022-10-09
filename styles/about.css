@@ -51,7 +51,7 @@ a {
 
 .section-three p {
   margin-bottom: 1.5rem;
-  text-align: justify;
+  text-align: start;
   color: #717171;
   line-height: 2.4rem;
   font-size: 1.25rem;
@@ -136,13 +136,13 @@ a {
     width: 45%;
   }
   .section-three {
-    padding: 4rem 0 8rem 0;
+    padding: 4rem 0 5rem 0;
   }
 }
 
 @media screen and (max-width: 768px) {
   .section-three {
-    width: 95%;
+    width: 90%;
   }
   .core-info {
     flex-direction: column;
