@@ -193,7 +193,7 @@ body {
     width: 90%;
   }
   .hero-section h1 {
-    font-size: 1.9rem;
+    font-size: 2.1rem;
   }
   .hero-section p{
     width: 100%;
@@ -219,7 +219,7 @@ body {
   }
 
   .hero-section h1 {
-    width: 90%;
+    width: 95%;
   }
   .hero-image {
     align-self: flex-start;
@@ -257,7 +257,6 @@ body {
     width: 100%;
   }
   .hero-section h1 {
-    font-size: 1.6rem;
     margin: 0.8rem 0;
   }
   .hero-section {

@@ -1,5 +1,5 @@
 
-const content = document.querySelectorAll('.content')
+// const content = document.querySelectorAll('.content')
 
  
 
@@ -28,29 +28,29 @@ const content = document.querySelectorAll('.content')
 
 
 // text slides 
-let slideIndexTwo = 1;
-showSlideTwo(slideIndexTwo);
+// let slideIndexTwo = 1;
+// showSlideTwo(slideIndexTwo);
 
-function plusSlides(n) {
-  showSlideTwo(slideIndexTwo += n);
-}
+// function plusSlides(n) {
+//   showSlideTwo(slideIndexTwo += n);
+// }
 
-function currentSlide(n) {
-  showSlideTwo(slideIndexTwo = n);
-}
+// function currentSlide(n) {
+//   showSlideTwo(slideIndexTwo = n);
+// }
 
-function showSlideTwo(n) {
-  let i;
-  let slideTwo = document.getElementsByClassName("mySlidesTwo");
-  let DotTwos = document.getElementsByClassName("dot");
-  if (n > slideTwo.length) {slideIndexTwo = 1}    
-  if (n < 1) {slideIndexTwo = slideTwo.length}
-  for (i = 0; i < slideTwo.length; i++) {
-    slideTwo[i].style.display = "none";  
-  }
-  for (i = 0; i < DotTwos.length; i++) {
-    DotTwos[i].className = DotTwos[i].className.replace(" active", "");
-  }
-  slideTwo[slideIndexTwo-1].style.display = "block";  
-  DotTwos[slideIndexTwo-1].className += " active";
-}
+// function showSlideTwo(n) {
+//   let i;
+//   let slideTwo = document.getElementsByClassName("mySlidesTwo");
+//   let DotTwos = document.getElementsByClassName("dot");
+//   if (n > slideTwo.length) {slideIndexTwo = 1}    
+//   if (n < 1) {slideIndexTwo = slideTwo.length}
+//   for (i = 0; i < slideTwo.length; i++) {
+//     slideTwo[i].style.display = "none";  
+//   }
+//   for (i = 0; i < DotTwos.length; i++) {
+//     DotTwos[i].className = DotTwos[i].className.replace(" active", "");
+//   }
+//   slideTwo[slideIndexTwo-1].style.display = "block";  
+//   DotTwos[slideIndexTwo-1].className += " active";
+// }
