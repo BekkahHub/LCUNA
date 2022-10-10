@@ -12,10 +12,7 @@
 html {
   overflow-x: hidden;
 }
-a {
-  text-decoration: none;
-  font-family: "Circular Std";
-}
+
 /* page header */
 .page-header {
   padding: 8rem 0;
@@ -41,35 +38,98 @@ a {
 .section-three {
   width: 85%;
   margin: 0 auto;
-  padding: 4rem 0 4rem 
+  padding: 4rem 0 4rem;
 }
-.section-three h2 {
-  font-size: 3rem;
-  text-align: center;
-  font-family: "Circular Std";
-}
-
 .section-three p {
   margin-bottom: 1.5rem;
-  text-align: start;
+  text-align: center;
   color: #717171;
   line-height: 2.4rem;
   font-size: 1.25rem;
   font-family: "Circular Std";
 }
+
+/* card section  */
+.core-card{
+  width: 75%;
+  margin: 0 auto;
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  justify-items: center;
+  align-self: center;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  border-radius: 8px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 8px;
+}
+
+.flip-card-front {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flip-card-front i {
+  font-size: 50px;
+  color: #0000fe;
+}
+.flip-card-back {
+  background-color: #000000;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
 /* workers section  */
-.team {
+.core, .team {
   width: 100%;
   margin: 0 auto;
+  max-width: 1440px;
+
 }
-.team h2 {
+.team h2, .core h2 {
   font-size: 2.5rem;
   text-align: center;
   font-family: "Circular Std";
 }
 .workers-section {
   width: 85%;
-  max-width: 1440px;
   margin: 0 auto;
   padding: 4rem 0;
   display: grid;
@@ -138,40 +198,37 @@ a {
   .section-three {
     padding: 4rem 0 5rem 0;
   }
+  .core-card{
+    width: 78%;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .section-three {
     width: 90%;
   }
-  .core-info {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 2rem;
+  .flip-card{
+    width: 250px;
+    height: 250px;
   }
   .section-three h2 {
     font-size: 2rem;
-  }
-  .core-info div {
-    width: 90%;
-  }
-  .core-info div:not(:last-of-type) {
-    margin-bottom: 2rem;
-  }
-  .core-info div h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
   }
 }
 @media screen and (max-width: 500px) {
   .page-header {
     padding: 5.5rem 0 6rem;
   }
-  .page-header p {
-    width: 90%;
+  .section-three{
+    padding: 2rem 0;
+  }
+  .core h2{
+    font-size: 1.8rem;
   }
   .page-header h3 {
     font-size: 35px;
+  }
+  .core-card{
+    width: 90%;
   }
 }

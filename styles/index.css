@@ -15,8 +15,7 @@
 }
 main,
 .hero-section,
-.about-section,
-.usage-section {
+.about-section{
   margin: 0 auto;
 }
 html,
@@ -58,28 +57,6 @@ body {
   text-decoration: none;
   font-family: "Circular Std";
   color: #0000fe;
-}
-#lcuna{ 
-  color: #0000fe;
-  font-weight: 600;
-}
-.readBtn {
-  border-radius: 8px;
-  padding: 1rem;
-  background-color: #0000fe;
-  color: #fff;
-}
-.readBtn:hover {
-  background-color: #4040c5;
-  color: #fff;
-}
-.arrow-dots{
-  display: flex;
-  width: 95%;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row-reverse;
-  margin-top: 5rem;
 }
 /* Roles section  */
 .roles-section {
@@ -248,7 +225,6 @@ body {
   .roles-info {
     width: 100%;
   }
-
 }
 
 @media screen and (max-width: 500px) {
@@ -258,6 +234,8 @@ body {
   }
   .hero-section h1 {
     margin: 0.8rem 0;
+    width: 100%;
+    font-size: 1.8rem;
   }
   .hero-section {
     padding: 8rem 0 6rem;
