@@ -6,9 +6,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body {
-  /* min-height: 100vh; */
-}
+
 nav {
   position: fixed;
   top: 0;
@@ -78,7 +76,6 @@ nav .navbar .links li a {
 }
 
 nav .navbar .links li .arrow {
-  /* background: red; */
   height: 100%;
   width: 22px;
   line-height: 70px;
